@@ -1,0 +1,116 @@
+7.4s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s 3 0.00s - to python to disable frozen modules.
+7.4s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.0s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 7 0.00s - to python to disable frozen modules.
+8.0s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+17.4s 9 Device: cuda
+17.4s 10 Output: /kaggle/working
+17.5s 11 setup_pauli_basis() defined.
+17.5s 12 Model classes defined: TorchDMCircuit, Encoder, HybridAE
+17.6s 13 All utility functions defined.
+18.1s 14 Pauli basis: 4q, dim=16, n_pauli_nonid=255, n_layers=6, n_angles=72
+24.2s 15 
+24.2s 16 4q: max_rho_err=1.57e-07, max_exp_err=3.09e-07 -> PASS
+24.2s 17 
+24.2s 18 Exp5 complete: 7s
+24.3s 19 train_one_seed() defined.
+24.3s 20 
+24.3s 21 ========================================================================
+24.3s 22 EXPERIMENT 1 — 4-QUBIT SEED VARIANCE (5 seeds)
+24.3s 23 ========================================================================
+24.3s 24 Pauli basis: 4q, dim=16, n_pauli_nonid=255, n_layers=6, n_angles=72
+24.3s 25 n_train=76500, n_val=12750, batch=512, latent=40
+24.3s 26 Generating training dataset...
+104.1s 27 Depolarized: requesting 10929 ... got 10929
+174.7s 28 Werner: requesting 10929 ... got 10929
+252.1s 29 Isotropic: requesting 10929 ... got 10929
+1337.0s 30 AmpDamped: requesting 10929 ... got 10929
+5539.9s 31 PhaseDamped: requesting 10928 ... got 10928
+6005.6s 32 Thermal: requesting 10928 ... got 10928
+6092.9s 33 Separable: requesting 10928 ... got 10928
+6093.8s 34 Total 76500 | purity [0.840, 0.960] mean=0.902
+6093.8s 35 Generating validation dataset...
+6105.4s 36 Depolarized: requesting 1822 ... got 1822
+6115.9s 37 Werner: requesting 1822 ... got 1822
+6127.4s 38 Isotropic: requesting 1822 ... got 1822
+6290.6s 39 AmpDamped: requesting 1821 ... got 1821
+6959.6s 40 PhaseDamped: requesting 1821 ... got 1821
+7036.4s 41 Thermal: requesting 1821 ... got 1821
+7051.8s 42 Separable: requesting 1821 ... got 1821
+7051.8s 43 Total 12750 | purity [0.840, 0.960] mean=0.903
+7051.8s 44 Dataset: train=(76500, 255), val=(12750, 255)
+7051.8s 45 
+7051.8s 46 ============================================================
+7051.8s 47 SEED 42 -- 4-qubit training
+7051.8s 48 ============================================================
+7079.1s 49 Ep 001 | val F 0.4279 | 22s
+7149.6s 50 Ep 005 | val F 0.6619 | 92s
+7936.7s 51 Ep 050 | val F 0.7833 | 879s
+8812.7s 52 Ep 100 | val F 0.8030 | 1755s
+9686.3s 53 Ep 150 | val F 0.8120 | 2629s
+10566.0s 54 Ep 200 | val F 0.8176 | 3509s
+11437.4s 55 Ep 250 | val F 0.8200 | 4380s
+12306.0s 56 Ep 300 | val F 0.8241 | 5249s
+13178.4s 57 Ep 350 | val F 0.8257 | 6121s
+14052.9s 58 Ep 400 | val F 0.8288 | 6995s
+14926.3s 59 Ep 450 | val F 0.8293 | 7869s
+15804.6s 60 Ep 500 | val F 0.8315 | 8747s
+16695.1s 61 Ep 550 | val F 0.8327 | 9638s
+17570.1s 62 Ep 600 | val F 0.8324 | 10513s
+17618.7s 63 F=0.8347, r=0.8239, PCA95=30, curv=0.05301
+17618.7s 64 Checkpoint saved: /kaggle/working/model_4q_seed42.pt
+17618.7s 65 
+17618.7s 66 ============================================================
+17618.7s 67 SEED 123 -- 4-qubit training
+17618.7s 68 ============================================================
+17637.9s 69 Ep 001 | val F 0.4283 | 19s
+17709.3s 70 Ep 005 | val F 0.6621 | 91s
+18498.0s 71 Ep 050 | val F 0.7707 | 879s
+19376.6s 72 Ep 100 | val F 0.7923 | 1758s
+20248.7s 73 Ep 150 | val F 0.8052 | 2630s
+21080.5s 74 Ep 200 | val F 0.8111 | 3462s
+21927.1s 75 Ep 250 | val F 0.8163 | 4308s
+22766.8s 76 Ep 300 | val F 0.8203 | 5148s
+23617.2s 77 Ep 350 | val F 0.8240 | 5998s
+24459.1s 78 Ep 400 | val F 0.8266 | 6840s
+25299.0s 79 Ep 450 | val F 0.8279 | 7680s
+26140.0s 80 Ep 500 | val F 0.8280 | 8521s
+26982.3s 81 Ep 550 | val F 0.8306 | 9364s
+27824.7s 82 Ep 600 | val F 0.8324 | 10206s
+27869.3s 83 F=0.8324, r=0.8663, PCA95=30, curv=0.05224
+27869.3s 84 Checkpoint saved: /kaggle/working/model_4q_seed123.pt
+27869.3s 85 
+27869.3s 86 ============================================================
+27869.3s 87 SEED 256 -- 4-qubit training
+27869.3s 88 ============================================================
+27887.9s 89 Ep 001 | val F 0.4248 | 19s
+27955.8s 90 Ep 005 | val F 0.6726 | 86s
+28712.2s 91 Ep 050 | val F 0.7862 | 843s
+29554.8s 92 Ep 100 | val F 0.8049 | 1685s
+30395.8s 93 Ep 150 | val F 0.8146 | 2526s
+31235.0s 94 Ep 200 | val F 0.8185 | 3366s
+32072.8s 95 Ep 250 | val F 0.8243 | 4203s
+32913.7s 96 Ep 300 | val F 0.8267 | 5044s
+33751.8s 97 Ep 350 | val F 0.8285 | 5882s
+34591.2s 98 Ep 400 | val F 0.8293 | 6722s
+35432.0s 99 Ep 450 | val F 0.8324 | 7563s
+36274.7s 100 Ep 500 | val F 0.8319 | 8405s
+37115.1s 101 Ep 550 | val F 0.8339 | 9246s
+37954.0s 102 Ep 600 | val F 0.8335 | 10085s
+37998.8s 103 F=0.8351, r=0.8582, PCA95=31, curv=0.05366
+37998.8s 104 Checkpoint saved: /kaggle/working/model_4q_seed256.pt
+37998.8s 105 
+37998.8s 106 ============================================================
+37998.8s 107 SEED 789 -- 4-qubit training
+37998.8s 108 ============================================================
+38017.1s 109 Ep 001 | val F 0.4363 | 18s
+38084.8s 110 Ep 005 | val F 0.6651 | 86s
+38841.6s 111 Ep 050 | val F 0.7825 | 843s
+39681.3s 112 Ep 100 | val F 0.8069 | 1682s
+40520.6s 113 Ep 150 | val F 0.8143 | 2522s
+41361.8s 114 Ep 200 | val F 0.8217 | 3363s
+42201.7s 115 Ep 250 | val F 0.8250 | 4203s
+43037.1s 116 Ep 300 | val F 0.8281 | 5038s

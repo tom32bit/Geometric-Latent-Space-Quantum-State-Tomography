@@ -1,0 +1,72 @@
+{
+  "Depolarized": {
+    "channel": "Depolarized",
+    "n_states": 200,
+    "mean_fidelity": 0.9258537062257528,
+    "median_fidelity": 0.9403670132160187,
+    "std_fidelity": 0.07050172882413505,
+    "min_fidelity": 0.20191006362438202,
+    "max_fidelity": 0.9870210289955139,
+    "mean_purity": 0.8998230510950088
+  },
+  "Werner": {
+    "channel": "Werner",
+    "n_states": 200,
+    "mean_fidelity": 0.9972170555591583,
+    "median_fidelity": 0.9973416924476624,
+    "std_fidelity": 0.0010264615515939203,
+    "min_fidelity": 0.9945990443229675,
+    "max_fidelity": 0.9983433485031128,
+    "mean_purity": 0.9106176674365998
+  },
+  "Isotropic": {
+    "channel": "Isotropic",
+    "n_states": 200,
+    "mean_fidelity": 0.919847165197134,
+    "median_fidelity": 0.9422476589679718,
+    "std_fidelity": 0.07591982279098133,
+    "min_fidelity": 0.19140401482582092,
+    "max_fidelity": 0.9827167987823486,
+    "mean_purity": 0.9005358493328095
+  },
+  "AmpDamped": {
+    "channel": "AmpDamped",
+    "n_states": 200,
+    "mean_fidelity": 0.9048870874941349,
+    "median_fidelity": 0.9185604155063629,
+    "std_fidelity": 0.0677586173850862,
+    "min_fidelity": 0.3183405101299286,
+    "max_fidelity": 0.9688412547111511,
+    "mean_purity": 0.9034949803352356
+  },
+  "PhaseDamped": {
+    "channel": "PhaseDamped",
+    "n_states": 200,
+    "mean_fidelity": 0.905596437305212,
+    "median_fidelity": 0.9231491684913635,
+    "std_fidelity": 0.06478325816501405,
+    "min_fidelity": 0.48639658093452454,
+    "max_fidelity": 0.9803706407546997,
+    "mean_purity": 0.8970931419730186
+  },
+  "Thermal": {
+    "channel": "Thermal",
+    "n_states": 200,
+    "mean_fidelity": 0.8809630495309829,
+    "median_fidelity": 0.8924097418785095,
+    "std_fidelity": 0.052309020828890565,
+    "min_fidelity": 0.6437840461730957,
+    "max_fidelity": 0.9525783658027649,
+    "mean_purity": 0.908301485478878
+  },
+  "Separable": {
+    "channel": "Separable",
+    "n_states": 200,
+    "mean_fidelity": 0.9301482880115509,
+    "median_fidelity": 0.9490052759647369,
+    "std_fidelity": 0.06512736514956666,
+    "min_fidelity": 0.28433507680892944,
+    "max_fidelity": 0.9865710735321045,
+    "mean_purity": 0.8962496110796928
+  }
+}

@@ -1,0 +1,179 @@
+7.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.0s 3 0.00s - to python to disable frozen modules.
+7.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.6s 7 0.00s - to python to disable frozen modules.
+7.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+16.2s 9 System  : 4 qubits | dim=16 | Pauli observables=255
+16.2s 10 Dataset : n_train=5000 | n_val=800 | batch_size=64 | 20 samples/param
+16.2s 11 Circuit : 6 layers | 72 angles + 6 noise = 78 params
+16.2s 12 Torch   : cuda | GPUs=2
+16.4s 13 Pauli basis: 256 total, 255 non-identity
+16.4s 14 Generating training dataset...
+25.0s 15 Depolarized: requesting 715 ... got 715
+33.1s 16 Werner: requesting 715 ... got 715
+41.1s 17 Isotropic: requesting 714 ... got 714
+76.4s 18 AmpDamped: requesting 714 ... got 714
+122.1s 19 PhaseDamped: requesting 714 ... got 714
+163.9s 20 Thermal: requesting 714 ... got 714
+172.6s 21 Separable: requesting 714 ... got 714
+172.6s 22 Total 5000 | purity [0.840, 0.960] mean=0.909
+172.6s 23 Generating validation dataset...
+174.0s 24 Depolarized: requesting 115 ... got 115
+175.3s 25 Werner: requesting 115 ... got 115
+176.6s 26 Isotropic: requesting 114 ... got 114
+182.5s 27 AmpDamped: requesting 114 ... got 114
+189.9s 28 PhaseDamped: requesting 114 ... got 114
+197.0s 29 Thermal: requesting 114 ... got 114
+198.7s 30 Separable: requesting 114 ... got 114
+198.7s 31 Total 800 | purity [0.840, 0.960] mean=0.910
+199.4s 32 Dataset saved to /kaggle/working/dataset_4q_cache.npz
+199.4s 33 Model trainable parameters: 275,833
+204.3s 34 
+204.3s 35 ========================================================================
+204.3s 36 TRAINING — 4-Qubit Hybrid Autoencoder (PyTorch-native circuit)
+204.3s 37 λ_metric=0.2  λ_purity=2.0  λ_purity_enc=0.1  NOISE_MAX=0.15
+204.3s 38 eval_every=5  max_epochs=600  target_fidelity=0.99
+204.3s 39 ========================================================================
+212.2s 40 Ep 001 | loss 1.15160 (recon 0.81387 | metric 0.75853) | val F 0.2328 | noise 0.0022 | 8s
+235.8s 41 Ep 005 | loss 0.70055 (recon 0.55191 | metric 0.43522) | val F 0.4747 | noise 0.0020 | 32s
+265.2s 42 Ep 010 | loss 0.55474 (recon 0.41852 | metric 0.38939) | val F 0.5801 | noise 0.0020 | 61s
+294.6s 43 Ep 015 | loss 0.50221 (recon 0.37386 | metric 0.36918) | val F 0.6125 | noise 0.0021 | 90s
+323.9s 44 Ep 020 | loss 0.47261 (recon 0.33690 | metric 0.41296) | val F 0.6328 | noise 0.0023 | 120s
+353.2s 45 Ep 025 | loss 0.44763 (recon 0.31516 | metric 0.41161) | val F 0.6406 | noise 0.0023 | 149s
+382.5s 46 Ep 030 | loss 0.41759 (recon 0.29741 | metric 0.36632) | val F 0.6563 | noise 0.0023 | 178s
+411.8s 47 Ep 035 | loss 0.41390 (recon 0.28641 | metric 0.41273) | val F 0.6592 | noise 0.0022 | 208s
+441.1s 48 Ep 040 | loss 0.39591 (recon 0.27859 | metric 0.37678) | val F 0.6622 | noise 0.0023 | 237s
+470.6s 49 Ep 045 | loss 0.37948 (recon 0.27084 | metric 0.34499) | val F 0.6731 | noise 0.0022 | 266s
+499.8s 50 Ep 050 | loss 0.38041 (recon 0.26932 | metric 0.37050) | val F 0.6729 | noise 0.0022 | 296s
+529.1s 51 Ep 055 | loss 0.36795 (recon 0.25843 | metric 0.37065) | val F 0.6729 | noise 0.0020 | 325s
+558.4s 52 Ep 060 | loss 0.36490 (recon 0.25602 | metric 0.37562) | val F 0.6728 | noise 0.0023 | 354s
+587.8s 53 Ep 065 | loss 0.36244 (recon 0.25141 | metric 0.38965) | val F 0.6770 | noise 0.0022 | 383s
+617.2s 54 Ep 070 | loss 0.35425 (recon 0.24864 | metric 0.36860) | val F 0.6755 | noise 0.0024 | 413s
+646.6s 55 Ep 075 | loss 0.35244 (recon 0.24521 | metric 0.38387) | val F 0.6769 | noise 0.0024 | 442s
+675.9s 56 Ep 080 | loss 0.34378 (recon 0.24156 | metric 0.36311) | val F 0.6798 | noise 0.0023 | 472s
+705.3s 57 Ep 085 | loss 0.33920 (recon 0.24029 | metric 0.34460) | val F 0.6788 | noise 0.0022 | 501s
+734.6s 58 Ep 090 | loss 0.33880 (recon 0.23487 | metric 0.37289) | val F 0.6770 | noise 0.0023 | 530s
+763.8s 59 Ep 095 | loss 0.33147 (recon 0.23380 | metric 0.34352) | val F 0.6788 | noise 0.0023 | 560s
+793.3s 60 Ep 100 | loss 0.33773 (recon 0.23447 | metric 0.37099) | val F 0.6764 | noise 0.0024 | 589s
+822.5s 61 Ep 105 | loss 0.33295 (recon 0.23203 | metric 0.36498) | val F 0.6781 | noise 0.0023 | 618s
+851.9s 62 Ep 110 | loss 0.32542 (recon 0.22742 | metric 0.35163) | val F 0.6850 | noise 0.0022 | 648s
+881.3s 63 Ep 115 | loss 0.32553 (recon 0.22701 | metric 0.35364) | val F 0.6815 | noise 0.0023 | 677s
+910.7s 64 Ep 120 | loss 0.33138 (recon 0.22631 | metric 0.38933) | val F 0.6825 | noise 0.0022 | 706s
+939.9s 65 Ep 125 | loss 0.32901 (recon 0.22357 | metric 0.39155) | val F 0.6791 | noise 0.0023 | 736s
+969.2s 66 Ep 130 | loss 0.32849 (recon 0.22295 | metric 0.39295) | val F 0.6784 | noise 0.0024 | 765s
+998.5s 67 Ep 135 | loss 0.32555 (recon 0.22205 | metric 0.38350) | val F 0.6795 | noise 0.0023 | 794s
+1027.9s 68 Ep 140 | loss 0.31890 (recon 0.21925 | metric 0.36671) | val F 0.6814 | noise 0.0023 | 824s
+1057.3s 69 Ep 145 | loss 0.31584 (recon 0.21590 | metric 0.36748) | val F 0.6799 | noise 0.0023 | 853s
+1086.8s 70 Ep 150 | loss 0.32655 (recon 0.22013 | metric 0.40036) | val F 0.6797 | noise 0.0022 | 883s
+1116.2s 71 Ep 155 | loss 0.31886 (recon 0.21516 | metric 0.38883) | val F 0.6804 | noise 0.0022 | 912s
+1145.5s 72 Ep 160 | loss 0.30082 (recon 0.20142 | metric 0.37158) | val F 0.6889 | noise 0.0023 | 941s
+1174.9s 73 Ep 165 | loss 0.29057 (recon 0.19518 | metric 0.35672) | val F 0.6897 | noise 0.0023 | 971s
+1204.2s 74 Ep 170 | loss 0.29799 (recon 0.19496 | metric 0.39320) | val F 0.6886 | noise 0.0023 | 1000s
+1233.4s 75 Ep 175 | loss 0.29526 (recon 0.19397 | metric 0.38643) | val F 0.6907 | noise 0.0023 | 1029s
+1262.7s 76 Ep 180 | loss 0.28640 (recon 0.19306 | metric 0.34783) | val F 0.6878 | noise 0.0023 | 1058s
+1291.9s 77 Ep 185 | loss 0.28677 (recon 0.19364 | metric 0.34683) | val F 0.6877 | noise 0.0023 | 1088s
+1321.1s 78 Ep 190 | loss 0.28819 (recon 0.19331 | metric 0.35475) | val F 0.6881 | noise 0.0022 | 1117s
+1350.4s 79 Ep 195 | loss 0.27370 (recon 0.19126 | metric 0.29452) | val F 0.6890 | noise 0.0023 | 1146s
+1379.7s 80 Ep 200 | loss 0.28365 (recon 0.18942 | metric 0.35226) | val F 0.6888 | noise 0.0023 | 1175s
+1409.1s 81 Ep 205 | loss 0.28550 (recon 0.19018 | metric 0.35868) | val F 0.6901 | noise 0.0023 | 1205s
+1438.3s 82 Ep 210 | loss 0.28977 (recon 0.19032 | metric 0.38031) | val F 0.6896 | noise 0.0023 | 1234s
+1467.6s 83 Ep 215 | loss 0.28860 (recon 0.19039 | metric 0.37241) | val F 0.6895 | noise 0.0023 | 1263s
+1496.9s 84 Ep 220 | loss 0.27967 (recon 0.18867 | metric 0.33842) | val F 0.6894 | noise 0.0022 | 1293s
+1526.3s 85 Ep 225 | loss 0.27257 (recon 0.18135 | metric 0.34170) | val F 0.6934 | noise 0.0022 | 1322s
+1555.6s 86 Ep 230 | loss 0.27377 (recon 0.18029 | metric 0.35309) | val F 0.6932 | noise 0.0023 | 1351s
+1584.9s 87 Ep 235 | loss 0.26941 (recon 0.17951 | metric 0.33501) | val F 0.6929 | noise 0.0023 | 1381s
+1614.3s 88 Ep 240 | loss 0.26953 (recon 0.17941 | metric 0.33743) | val F 0.6921 | noise 0.0023 | 1410s
+1643.6s 89 Ep 245 | loss 0.26916 (recon 0.17890 | metric 0.33884) | val F 0.6928 | noise 0.0022 | 1439s
+1672.9s 90 Ep 250 | loss 0.26510 (recon 0.17882 | metric 0.31861) | val F 0.6926 | noise 0.0022 | 1469s
+1702.2s 91 Ep 255 | loss 0.26683 (recon 0.17792 | metric 0.33083) | val F 0.6927 | noise 0.0022 | 1498s
+1731.6s 92 Ep 260 | loss 0.25937 (recon 0.17893 | metric 0.28980) | val F 0.6939 | noise 0.0023 | 1527s
+1760.9s 93 Ep 265 | loss 0.27622 (recon 0.17919 | metric 0.37304) | val F 0.6922 | noise 0.0023 | 1557s
+1790.1s 94 Ep 270 | loss 0.27745 (recon 0.17787 | metric 0.38685) | val F 0.6914 | noise 0.0023 | 1586s
+1819.6s 95 Ep 275 | loss 0.27056 (recon 0.17619 | metric 0.36044) | val F 0.6919 | noise 0.0023 | 1615s
+1848.9s 96 Ep 280 | loss 0.27683 (recon 0.17735 | metric 0.38662) | val F 0.6913 | noise 0.0022 | 1645s
+1878.2s 97 Ep 285 | loss 0.27007 (recon 0.17642 | metric 0.35701) | val F 0.6922 | noise 0.0022 | 1674s
+1907.8s 98 Ep 290 | loss 0.26888 (recon 0.17574 | metric 0.35525) | val F 0.6911 | noise 0.0022 | 1704s
+1937.1s 99 Ep 295 | loss 0.27335 (recon 0.17433 | metric 0.38312) | val F 0.6914 | noise 0.0022 | 1733s
+1966.3s 100 Ep 300 | loss 0.26855 (recon 0.17717 | metric 0.34523) | val F 0.6911 | noise 0.0023 | 1762s
+1966.3s 101 Early stopping at epoch 300 (15 eval steps without improvement)
+1966.3s 102 
+1966.3s 103 Restored best model: val fidelity = 0.6939
+1966.4s 104 Final val: mean=0.6939 | median=0.7163
+1966.4s 105 
+1966.4s 106 Learned depolarising noise per layer:
+1966.4s 107 Layer 1: 0.0013 ± 0.0009
+1966.4s 108 Layer 2: 0.0008 ± 0.0002
+1966.4s 109 Layer 3: 0.0019 ± 0.0014
+1966.4s 110 Layer 4: 0.0011 ± 0.0003
+1966.4s 111 Layer 5: 0.0007 ± 0.0004
+1966.4s 112 Layer 6: 0.0075 ± 0.0025
+1966.4s 113 
+1966.4s 114 ========================================================================
+1966.4s 115 SHOT NOISE ROBUSTNESS EVALUATION
+1966.4s 116 ========================================================================
+1966.6s 117 10,000 shots ...  F = 0.6985 ± 0.1782
+1966.8s 118 1,000 shots ...  F = 0.7244 ± 0.1946
+1967.0s 119 100 shots ...  F = 0.7496 ± 0.1809
+1967.0s 120 
+1967.0s 121 Shot Noise Summary:
+1967.0s 122 Condition |   Mean F |     Std
+1967.0s 123 --------------------------------------------------
+1967.0s 124 Analytical (∞ shots) |   0.6939 |  0.2022
+1967.0s 125 10,000 shots |   0.6985 |  0.1782
+1967.0s 126 1,000 shots |   0.7244 |  0.1946
+1967.0s 127 100 shots |   0.7496 |  0.1809
+1967.0s 128 
+1967.0s 129 ========================================================================
+1967.0s 130 MANIFOLD GEOMETRY ANALYSIS
+1967.0s 131 ========================================================================
+1967.2s 132 Latent matrix Z: (5800, 40)
+1967.2s 133 Computing geodesic-Bures correlation (600 pairs, GPU) ...
+1967.2s 134 Pearson  r  = 0.8368  (p=1.42e-158)
+1967.2s 135 Spearman ρ  = 0.4212  (p=3.34e-27)
+1967.2s 136 R²          = 0.7002
+1967.2s 137 Linear fit  : d_L = 2.1450·d_B + 0.1623
+1967.6s 138 
+1967.6s 139 Intrinsic dim (MLE): 2657.28 ± 123320.05
+1967.6s 140 PCA 95%: 32 dims | PCA 99%: 37 dims
+1967.6s 141 Top-5 eigenvalues: [0.18958366 0.04283048 0.03851769 0.03610778 0.03530038]
+1969.0s 142 
+1969.0s 143 Curvature (k=25): mean=0.04383 ± 0.02095  IQR=[0.03820, 0.05698]
+1969.0s 144 
+1969.0s 145 Computing 120×120 Bures matrix (GPU batched) ...
+1969.0s 146 Running MDS (3D + 2D) ...
+1970.1s 147 Procrustes RMSE: 0.5945
+1970.9s 148 Saved fig1_geodesic_bures_4q.png
+1971.8s 149 Saved fig2_training_dynamics_4q.png
+1972.0s 150 Saved fig3_shot_noise_4q.png
+1973.2s 151 Saved fig4_manifold_analysis_4q.png
+1974.9s 152 Saved fig5_manifold_3d_4q.png
+1975.2s 153 Saved fig6_fidelity_dist_4q.png
+1975.2s 154 
+1975.2s 155 ========================================================================
+1975.2s 156 RESULTS — 4-QUBIT GEOMETRIC LATENT SPACE TOMOGRAPHY
+1975.2s 157 ========================================================================
+1975.2s 158 Qubits      : 4  |  Pauli observables: 255
+1975.2s 159 Decoder     : PyTorch density matrix circuit (6 learned depolarising params)
+1975.2s 160 Fidelity    : mean=0.6939  median=0.7163
+1975.2s 161 Pearson r   : 0.8368  |  Spearman ρ: 0.4212  |  R²: 0.7002
+1975.2s 162 Intrinsic d : 2657.28 ± 123320.05 (MLE)  |  PCA-95%: 32 dims
+1975.2s 163 Curvature   : 0.04383 ± 0.02095
+1975.2s 164 Procrustes  : RMSE = 0.5945
+1975.2s 165 Shot noise  :
+1975.2s 166 Analytical (∞ shots) : 0.6939 ± 0.2022
+1975.2s 167 10,000 shots : 0.6985 ± 0.1782
+1975.2s 168 1,000 shots : 0.7244 ± 0.1946
+1975.2s 169 100 shots : 0.7496 ± 0.1809
+1975.2s 170 ========================================================================
+1975.2s 171 All figures saved to /kaggle/working
+1980.1s 172 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+1980.1s 173 cells[i][c] = re.sub('\\\\\|', '|', cell)
+1980.3s 174 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+1980.3s 175 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+1980.9s 176 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1981.2s 177 [NbConvertApp] Writing 82904 bytes to __notebook__.ipynb
+1983.5s 178 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1984.5s 179 [NbConvertApp] Writing 597218 bytes to __results__.html

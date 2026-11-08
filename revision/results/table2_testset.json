@@ -1,0 +1,35 @@
+{
+ "2q": {
+  "data_limited_own_val_F": 0.9820884177833795,
+  "data_limited_logged_val_F": null,
+  "data_limited_F": 0.9802691385666861,
+  "data_limited_F_no_werner": 0.977209355275968,
+  "data_sufficient_F_seed_mean": 0.9791585155247725,
+  "data_sufficient_F_sd": 0.002513643764868334,
+  "delta_F": -0.001110623041913561,
+  "samples_per_parameter_5k": 333.3333333333333,
+  "note": "data-limited: single run (tomography.py generator), batch 64; data-sufficient: seed study, batch 64/256/512"
+ },
+ "3q": {
+  "data_limited_own_val_F": 0.9167280338890851,
+  "data_limited_logged_val_F": 0.9167,
+  "data_limited_F": 0.9119054631642576,
+  "data_limited_F_no_werner": 0.8976282937465108,
+  "data_sufficient_F_seed_mean": 0.9241936918957435,
+  "data_sufficient_F_sd": 0.0033561386844771475,
+  "delta_F": 0.01228822873148594,
+  "samples_per_parameter_5k": 79.36507936507937,
+  "note": "data-limited: single run (tomography.py generator), batch 64; data-sufficient: seed study, batch 64/256/512"
+ },
+ "4q": {
+  "data_limited_own_val_F": 0.694055047724396,
+  "data_limited_logged_val_F": 0.6939,
+  "data_limited_F": 0.6858187134782763,
+  "data_limited_F_no_werner": 0.6349632930427556,
+  "data_sufficient_F_seed_mean": 0.8336253738967087,
+  "data_sufficient_F_sd": 0.0005433298608989299,
+  "delta_F": 0.14780666041843238,
+  "samples_per_parameter_5k": 19.607843137254903,
+  "note": "data-limited: single run (tomography.py generator), batch 64; data-sufficient: seed study, batch 64/256/512"
+ }
+}

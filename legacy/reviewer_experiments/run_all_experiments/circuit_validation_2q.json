@@ -1,0 +1,8 @@
+{
+  "n_qubits": 2,
+  "n_circuits": 100,
+  "max_rho_error": 2.4859176208115636e-07,
+  "max_exp_error": 4.285831811667862e-07,
+  "mean_exp_error": 1.5799412185945465e-07,
+  "pass": true
+}

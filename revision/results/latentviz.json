@@ -1,0 +1,52 @@
+{
+ "meta": {
+  "generated": "2026-11-01 00:52:25",
+  "testset_hashes": {
+   "2q": "9d4532d074176dae",
+   "3q": "da25db4933060ad1",
+   "4q": "8aacbc8af5cc9f25"
+  }
+ },
+ "2q": {
+  "model": "seed 42",
+  "n_states": 7000,
+  "pca_explained_variance_ratio": [
+   0.2250664934464026,
+   0.09169369812986124
+  ],
+  "tsne": {
+   "perplexity": 30,
+   "init": "pca",
+   "random_state": 0
+  },
+  "negativity_cut": "first 1 qubit(s) | rest"
+ },
+ "3q": {
+  "model": "seed 42",
+  "n_states": 7000,
+  "pca_explained_variance_ratio": [
+   0.22153999454893736,
+   0.0643075946935093
+  ],
+  "tsne": {
+   "perplexity": 30,
+   "init": "pca",
+   "random_state": 0
+  },
+  "negativity_cut": "first 1 qubit(s) | rest"
+ },
+ "4q": {
+  "model": "seed 42",
+  "n_states": 7000,
+  "pca_explained_variance_ratio": [
+   0.17242085297024168,
+   0.04800842251995244
+  ],
+  "tsne": {
+   "perplexity": 30,
+   "init": "pca",
+   "random_state": 0
+  },
+  "negativity_cut": "first 2 qubit(s) | rest"
+ }
+}

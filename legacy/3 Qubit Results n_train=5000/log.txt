@@ -1,0 +1,208 @@
+System  : 3 qubits | dim=8 | Pauli observables=63
+Circuit : 5 layers | 45 angles + 5 noise = 50 params
+Torch   : cuda | GPUs=2
+Pauli basis: 64 total, 63 non-identity
+Generating training dataset...
+  Depolarized: requesting 715 ... got 715
+  Werner: requesting 715 ... got 715
+  Isotropic: requesting 714 ... got 714
+  AmpDamped: requesting 714 ... got 714
+  PhaseDamped: requesting 714 ... got 714
+  Thermal: requesting 714 ... got 714
+  Separable: requesting 714 ... got 714
+  Total 5000 | purity [0.840, 0.960] mean=0.913
+Generating validation dataset...
+  Depolarized: requesting 115 ... got 115
+  Werner: requesting 115 ... got 115
+  Isotropic: requesting 114 ... got 114
+  AmpDamped: requesting 114 ... got 114
+  PhaseDamped: requesting 114 ... got 114
+  Thermal: requesting 114 ... got 114
+  Separable: requesting 114 ... got 114
+  Total 800 | purity [0.840, 0.960] mean=0.915
+Dataset saved to /kaggle/working/dataset_3q_cache.npz
+Model trainable parameters: 20,332
+
+========================================================================
+TRAINING — 3-Qubit Hybrid Autoencoder (PyTorch-native circuit)
+  λ_metric=0.2  λ_purity=2.0  λ_purity_enc=0.1  NOISE_MAX=0.15
+  eval_every=5  max_epochs=600  target_fidelity=0.99
+========================================================================
+Ep 001 | loss 1.03752 (recon 0.66209 | metric 0.65266) | val F 0.4735 | noise 0.0035 | 4s
+Ep 005 | loss 0.45980 (recon 0.31118 | metric 0.42045) | val F 0.7600 | noise 0.0033 | 21s
+Ep 010 | loss 0.38107 (recon 0.23868 | metric 0.40706) | val F 0.8223 | noise 0.0038 | 41s
+Ep 015 | loss 0.35492 (recon 0.21364 | metric 0.41364) | val F 0.8439 | noise 0.0032 | 62s
+Ep 020 | loss 0.33528 (recon 0.20003 | metric 0.39180) | val F 0.8593 | noise 0.0031 | 83s
+Ep 025 | loss 0.32914 (recon 0.19098 | metric 0.41015) | val F 0.8679 | noise 0.0036 | 104s
+Ep 030 | loss 0.32328 (recon 0.18363 | metric 0.41789) | val F 0.8724 | noise 0.0030 | 124s
+Ep 035 | loss 0.31104 (recon 0.17923 | metric 0.37806) | val F 0.8773 | noise 0.0033 | 145s
+Ep 040 | loss 0.31071 (recon 0.17763 | metric 0.38573) | val F 0.8827 | noise 0.0034 | 165s
+Ep 045 | loss 0.30153 (recon 0.17223 | metric 0.36594) | val F 0.8857 | noise 0.0033 | 186s
+Ep 050 | loss 0.31240 (recon 0.17187 | metric 0.42251) | val F 0.8816 | noise 0.0033 | 207s
+Ep 055 | loss 0.29545 (recon 0.16729 | metric 0.36235) | val F 0.8880 | noise 0.0033 | 228s
+Ep 060 | loss 0.30565 (recon 0.16935 | metric 0.40216) | val F 0.8860 | noise 0.0034 | 249s
+Ep 065 | loss 0.30529 (recon 0.16876 | metric 0.40301) | val F 0.8854 | noise 0.0033 | 269s
+Ep 070 | loss 0.30489 (recon 0.16892 | metric 0.39908) | val F 0.8899 | noise 0.0034 | 290s
+Ep 075 | loss 0.29045 (recon 0.16643 | metric 0.34347) | val F 0.8908 | noise 0.0033 | 311s
+Ep 080 | loss 0.29658 (recon 0.16226 | metric 0.39339) | val F 0.8900 | noise 0.0033 | 332s
+Ep 085 | loss 0.29221 (recon 0.16296 | metric 0.36854) | val F 0.8945 | noise 0.0034 | 353s
+Ep 090 | loss 0.29695 (recon 0.16246 | metric 0.39360) | val F 0.8924 | noise 0.0034 | 374s
+Ep 095 | loss 0.29325 (recon 0.16314 | metric 0.37307) | val F 0.8909 | noise 0.0033 | 394s
+Ep 100 | loss 0.29134 (recon 0.16125 | metric 0.37113) | val F 0.8946 | noise 0.0033 | 415s
+Ep 105 | loss 0.28887 (recon 0.15825 | metric 0.37733) | val F 0.8974 | noise 0.0035 | 436s
+Ep 110 | loss 0.28620 (recon 0.15937 | metric 0.35656) | val F 0.8981 | noise 0.0032 | 457s
+Ep 115 | loss 0.28306 (recon 0.15918 | metric 0.34296) | val F 0.8973 | noise 0.0034 | 477s
+Ep 120 | loss 0.29675 (recon 0.15792 | metric 0.42014) | val F 0.8977 | noise 0.0035 | 498s
+Ep 125 | loss 0.28363 (recon 0.15580 | metric 0.36370) | val F 0.8974 | noise 0.0032 | 519s
+Ep 130 | loss 0.29256 (recon 0.15882 | metric 0.39380) | val F 0.8972 | noise 0.0033 | 540s
+Ep 135 | loss 0.28357 (recon 0.15663 | metric 0.35989) | val F 0.8981 | noise 0.0033 | 560s
+Ep 140 | loss 0.28564 (recon 0.15487 | metric 0.37788) | val F 0.8960 | noise 0.0034 | 581s
+Ep 145 | loss 0.29035 (recon 0.15680 | metric 0.39360) | val F 0.8994 | noise 0.0034 | 602s
+Ep 150 | loss 0.27691 (recon 0.15398 | metric 0.33943) | val F 0.8981 | noise 0.0034 | 622s
+Ep 155 | loss 0.28117 (recon 0.15537 | metric 0.35321) | val F 0.9006 | noise 0.0034 | 643s
+Ep 160 | loss 0.28202 (recon 0.15454 | metric 0.36526) | val F 0.9020 | noise 0.0035 | 663s
+Ep 165 | loss 0.28379 (recon 0.15477 | metric 0.37023) | val F 0.9010 | noise 0.0033 | 684s
+Ep 170 | loss 0.28061 (recon 0.15325 | metric 0.36264) | val F 0.8999 | noise 0.0034 | 705s
+Ep 175 | loss 0.28857 (recon 0.15517 | metric 0.39555) | val F 0.9024 | noise 0.0033 | 725s
+Ep 180 | loss 0.28186 (recon 0.15356 | metric 0.36938) | val F 0.9008 | noise 0.0033 | 746s
+Ep 185 | loss 0.27160 (recon 0.15144 | metric 0.32702) | val F 0.9033 | noise 0.0034 | 766s
+Ep 190 | loss 0.28880 (recon 0.15208 | metric 0.41106) | val F 0.9015 | noise 0.0034 | 786s
+Ep 195 | loss 0.27628 (recon 0.15325 | metric 0.34144) | val F 0.9021 | noise 0.0033 | 807s
+Ep 200 | loss 0.27325 (recon 0.15100 | metric 0.33649) | val F 0.9024 | noise 0.0035 | 827s
+Ep 205 | loss 0.27083 (recon 0.15047 | metric 0.33022) | val F 0.9035 | noise 0.0034 | 848s
+Ep 210 | loss 0.27537 (recon 0.15052 | metric 0.35220) | val F 0.9043 | noise 0.0034 | 868s
+Ep 215 | loss 0.27724 (recon 0.15036 | metric 0.36198) | val F 0.9025 | noise 0.0033 | 889s
+Ep 220 | loss 0.27893 (recon 0.15227 | metric 0.36271) | val F 0.9023 | noise 0.0034 | 909s
+Ep 225 | loss 0.27775 (recon 0.15155 | metric 0.35892) | val F 0.9041 | noise 0.0034 | 929s
+Ep 230 | loss 0.27155 (recon 0.14926 | metric 0.33921) | val F 0.9032 | noise 0.0035 | 949s
+Ep 235 | loss 0.27174 (recon 0.15066 | metric 0.33588) | val F 0.9029 | noise 0.0033 | 969s
+Ep 240 | loss 0.28262 (recon 0.15003 | metric 0.38932) | val F 0.9048 | noise 0.0033 | 989s
+Ep 245 | loss 0.27261 (recon 0.14876 | metric 0.34633) | val F 0.9042 | noise 0.0034 | 1009s
+Ep 250 | loss 0.27971 (recon 0.15153 | metric 0.36992) | val F 0.9032 | noise 0.0033 | 1030s
+Ep 255 | loss 0.27528 (recon 0.14766 | metric 0.36664) | val F 0.9053 | noise 0.0034 | 1050s
+Ep 260 | loss 0.27912 (recon 0.14835 | metric 0.38047) | val F 0.9060 | noise 0.0033 | 1070s
+Ep 265 | loss 0.26971 (recon 0.15069 | metric 0.32427) | val F 0.9069 | noise 0.0033 | 1090s
+Ep 270 | loss 0.27309 (recon 0.14810 | metric 0.35224) | val F 0.9056 | noise 0.0033 | 1110s
+Ep 275 | loss 0.26416 (recon 0.14780 | metric 0.31079) | val F 0.9066 | noise 0.0033 | 1130s
+Ep 280 | loss 0.27162 (recon 0.14850 | metric 0.34333) | val F 0.9058 | noise 0.0033 | 1150s
+Ep 285 | loss 0.27589 (recon 0.14907 | metric 0.36395) | val F 0.9086 | noise 0.0034 | 1170s
+Ep 290 | loss 0.26996 (recon 0.14682 | metric 0.34409) | val F 0.9067 | noise 0.0033 | 1191s
+Ep 295 | loss 0.27337 (recon 0.14781 | metric 0.35672) | val F 0.9071 | noise 0.0034 | 1211s
+Ep 300 | loss 0.27519 (recon 0.14816 | metric 0.36483) | val F 0.9054 | noise 0.0034 | 1231s
+Ep 305 | loss 0.27459 (recon 0.14945 | metric 0.35288) | val F 0.9052 | noise 0.0034 | 1251s
+Ep 310 | loss 0.26987 (recon 0.14591 | metric 0.34902) | val F 0.9060 | noise 0.0034 | 1271s
+Ep 315 | loss 0.27873 (recon 0.14673 | metric 0.39097) | val F 0.9076 | noise 0.0035 | 1292s
+Ep 320 | loss 0.27223 (recon 0.14861 | metric 0.34686) | val F 0.9057 | noise 0.0034 | 1312s
+Ep 325 | loss 0.26994 (recon 0.14654 | metric 0.34750) | val F 0.9053 | noise 0.0034 | 1333s
+Ep 330 | loss 0.27833 (recon 0.14698 | metric 0.38528) | val F 0.9051 | noise 0.0033 | 1353s
+Ep 335 | loss 0.26286 (recon 0.14385 | metric 0.32664) | val F 0.9124 | noise 0.0034 | 1373s
+Ep 340 | loss 0.26410 (recon 0.14416 | metric 0.32928) | val F 0.9109 | noise 0.0033 | 1394s
+Ep 345 | loss 0.26958 (recon 0.14294 | metric 0.36294) | val F 0.9124 | noise 0.0034 | 1415s
+Ep 350 | loss 0.26219 (recon 0.14137 | metric 0.33490) | val F 0.9114 | noise 0.0033 | 1435s
+Ep 355 | loss 0.26232 (recon 0.14056 | metric 0.33871) | val F 0.9122 | noise 0.0033 | 1456s
+Ep 360 | loss 0.26313 (recon 0.14096 | metric 0.34271) | val F 0.9128 | noise 0.0034 | 1476s
+Ep 365 | loss 0.26177 (recon 0.14010 | metric 0.33842) | val F 0.9125 | noise 0.0034 | 1497s
+Ep 370 | loss 0.25901 (recon 0.13991 | metric 0.32716) | val F 0.9117 | noise 0.0034 | 1518s
+Ep 375 | loss 0.26550 (recon 0.14096 | metric 0.35433) | val F 0.9125 | noise 0.0033 | 1539s
+Ep 380 | loss 0.26973 (recon 0.14191 | metric 0.36919) | val F 0.9130 | noise 0.0034 | 1560s
+Ep 385 | loss 0.26450 (recon 0.14184 | metric 0.34365) | val F 0.9127 | noise 0.0034 | 1582s
+Ep 390 | loss 0.26410 (recon 0.14162 | metric 0.34162) | val F 0.9131 | noise 0.0034 | 1603s
+Ep 395 | loss 0.26561 (recon 0.14038 | metric 0.35818) | val F 0.9133 | noise 0.0034 | 1625s
+Ep 400 | loss 0.25821 (recon 0.13946 | metric 0.32462) | val F 0.9140 | noise 0.0034 | 1647s
+Ep 405 | loss 0.26515 (recon 0.13906 | metric 0.36460) | val F 0.9135 | noise 0.0034 | 1668s
+Ep 410 | loss 0.26771 (recon 0.14067 | metric 0.36676) | val F 0.9146 | noise 0.0034 | 1690s
+Ep 415 | loss 0.26416 (recon 0.13948 | metric 0.35448) | val F 0.9133 | noise 0.0034 | 1712s
+Ep 420 | loss 0.25982 (recon 0.14093 | metric 0.32694) | val F 0.9124 | noise 0.0033 | 1733s
+Ep 425 | loss 0.26964 (recon 0.14056 | metric 0.37731) | val F 0.9137 | noise 0.0034 | 1754s
+Ep 430 | loss 0.26295 (recon 0.14185 | metric 0.33512) | val F 0.9134 | noise 0.0034 | 1775s
+Ep 435 | loss 0.25883 (recon 0.14109 | metric 0.32271) | val F 0.9136 | noise 0.0034 | 1796s
+Ep 440 | loss 0.25789 (recon 0.13916 | metric 0.32527) | val F 0.9134 | noise 0.0034 | 1817s
+Ep 445 | loss 0.26082 (recon 0.14078 | metric 0.33158) | val F 0.9139 | noise 0.0034 | 1838s
+Ep 450 | loss 0.26124 (recon 0.13932 | metric 0.34391) | val F 0.9141 | noise 0.0033 | 1859s
+Ep 455 | loss 0.25977 (recon 0.13890 | metric 0.33593) | val F 0.9131 | noise 0.0033 | 1880s
+Ep 460 | loss 0.25524 (recon 0.13609 | metric 0.32800) | val F 0.9155 | noise 0.0034 | 1901s
+Ep 465 | loss 0.25516 (recon 0.13742 | metric 0.31960) | val F 0.9167 | noise 0.0034 | 1923s
+Ep 470 | loss 0.25919 (recon 0.13693 | metric 0.34526) | val F 0.9166 | noise 0.0034 | 1944s
+Ep 475 | loss 0.25767 (recon 0.13614 | metric 0.34140) | val F 0.9169 | noise 0.0034 | 1965s
+Ep 480 | loss 0.26453 (recon 0.13590 | metric 0.37633) | val F 0.9156 | noise 0.0033 | 1986s
+Ep 485 | loss 0.25519 (recon 0.13669 | metric 0.32539) | val F 0.9165 | noise 0.0034 | 2007s
+Ep 490 | loss 0.26198 (recon 0.13657 | metric 0.35918) | val F 0.9163 | noise 0.0034 | 2028s
+Ep 495 | loss 0.25786 (recon 0.13636 | metric 0.34209) | val F 0.9160 | noise 0.0034 | 2049s
+Ep 500 | loss 0.26156 (recon 0.13716 | metric 0.35675) | val F 0.9164 | noise 0.0034 | 2070s
+Ep 505 | loss 0.26002 (recon 0.13554 | metric 0.35585) | val F 0.9160 | noise 0.0034 | 2091s
+Ep 510 | loss 0.25890 (recon 0.13593 | metric 0.34907) | val F 0.9160 | noise 0.0034 | 2112s
+Ep 515 | loss 0.25887 (recon 0.13631 | metric 0.34820) | val F 0.9161 | noise 0.0033 | 2133s
+Ep 520 | loss 0.25842 (recon 0.13598 | metric 0.34504) | val F 0.9166 | noise 0.0034 | 2154s
+Ep 525 | loss 0.25745 (recon 0.13477 | metric 0.34657) | val F 0.9169 | noise 0.0034 | 2175s
+Ep 530 | loss 0.25736 (recon 0.13510 | metric 0.34549) | val F 0.9171 | noise 0.0034 | 2196s
+Ep 535 | loss 0.25011 (recon 0.13437 | metric 0.31326) | val F 0.9176 | noise 0.0034 | 2216s
+Ep 540 | loss 0.26202 (recon 0.13569 | metric 0.36559) | val F 0.9175 | noise 0.0034 | 2237s
+Early stopping at epoch 540 (15 eval steps without improvement)
+
+Restored best model: val fidelity = 0.9167
+Final val: mean=0.9167 | median=0.9297
+
+Learned depolarising noise per layer:
+  Layer 1: 0.0008 ± 0.0010
+  Layer 2: 0.0011 ± 0.0007
+  Layer 3: 0.0015 ± 0.0011
+  Layer 4: 0.0005 ± 0.0006
+  Layer 5: 0.0130 ± 0.0020
+
+========================================================================
+SHOT NOISE ROBUSTNESS EVALUATION
+========================================================================
+  10,000 shots ...  F = 0.9163 ± 0.0742
+  1,000 shots ...  F = 0.9158 ± 0.0890
+  100 shots ...  F = 0.9516 ± 0.0543
+
+Shot Noise Summary:
+                Condition |   Mean F |     Std
+--------------------------------------------------
+     Analytical (∞ shots) |   0.9167 |  0.0779
+             10,000 shots |   0.9163 |  0.0742
+              1,000 shots |   0.9158 |  0.0890
+                100 shots |   0.9516 |  0.0543
+
+========================================================================
+MANIFOLD GEOMETRY ANALYSIS
+========================================================================
+Latent matrix Z: (5800, 30)
+Computing geodesic-Bures correlation (600 pairs, GPU) ...
+  Pearson  r  = 0.8200  (p=8.30e-147)
+  Spearman ρ  = 0.5743  (p=7.52e-54)
+  R²          = 0.6724
+  Linear fit  : d_L = 1.4365·d_B + 0.1569
+
+Intrinsic dim (MLE): 4226.69 ± 220472.50
+PCA 95%: 21 dims | PCA 99%: 27 dims
+Top-5 eigenvalues: [0.23020591 0.06136442 0.05957938 0.05423681 0.05209735]
+
+Curvature (k=25): mean=0.01287 ± 0.00733  IQR=[0.00897, 0.01754]
+
+Computing 120×120 Bures matrix (GPU batched) ...
+Running MDS (3D + 2D) ...
+Procrustes RMSE: 0.4188
+Saved fig1_geodesic_bures_3q.png
+Saved fig2_training_dynamics_3q.png
+Saved fig3_shot_noise_3q.png
+Saved fig4_manifold_analysis_3q.png
+Saved fig5_manifold_3d_3q.png
+Saved fig6_fidelity_dist_3q.png
+
+========================================================================
+RESULTS — 3-QUBIT GEOMETRIC LATENT SPACE TOMOGRAPHY
+========================================================================
+  Qubits      : 3  |  Pauli observables: 63
+  Decoder     : PyTorch density matrix circuit (5 learned depolarising params)
+  Fidelity    : mean=0.9167  median=0.9297
+  Pearson r   : 0.8200  |  Spearman ρ: 0.5743  |  R²: 0.6724
+  Intrinsic d : 4226.69 ± 220472.50 (MLE)  |  PCA-95%: 21 dims
+  Curvature   : 0.01287 ± 0.00733
+  Procrustes  : RMSE = 0.4188
+  Shot noise  :
+         Analytical (∞ shots) : 0.9167 ± 0.0779
+                 10,000 shots : 0.9163 ± 0.0742
+                  1,000 shots : 0.9158 ± 0.0890
+                    100 shots : 0.9516 ± 0.0543
+========================================================================

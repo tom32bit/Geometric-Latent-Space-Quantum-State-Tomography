@@ -1,0 +1,107 @@
+8.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.3s 3 0.00s - to python to disable frozen modules.
+8.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.0s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.0s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.0s 7 0.00s - to python to disable frozen modules.
+9.0s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+17.3s 9 Device: cuda
+17.3s 10 Output: /kaggle/working
+17.3s 11 setup_pauli_basis() defined.
+17.4s 12 Model classes defined: TorchDMCircuit, Encoder, HybridAE
+17.5s 13 All utility functions defined.
+18.0s 14 Pauli basis: 4q, dim=16, n_pauli_nonid=255, n_layers=6, n_angles=72
+18.0s 15 Found checkpoint: /kaggle/input/models/abdullahalshafin/model-4q-seed42/pytorch/default/1/model_4q_seed42.pt
+18.0s 16 Model loaded from checkpoint.
+18.0s 17 
+18.0s 18 Load/train time: 0s
+18.0s 19 
+18.0s 20 ========================================================================
+18.0s 21 EXPERIMENT 4 — 4-QUBIT PER-CHANNEL BREAKDOWN
+18.0s 22 ========================================================================
+18.0s 23 
+20.7s 24 Evaluating Depolarized (200 states)...  F = 0.8149 +/- 0.0938
+20.7s 25 
+21.5s 26 Evaluating Werner (200 states)...  F = 0.9972 +/- 0.0012
+21.5s 27 
+22.3s 28 Evaluating Isotropic (200 states)...  F = 0.8167 +/- 0.0938
+22.3s 29 
+31.5s 30 Evaluating AmpDamped (200 states)...  F = 0.7971 +/- 0.0961
+31.6s 31 
+69.9s 32 Evaluating PhaseDamped (200 states)...  F = 0.7939 +/- 0.0884
+69.9s 33 
+74.8s 34 Evaluating Thermal (200 states)...  F = 0.7574 +/- 0.0978
+74.8s 35 
+75.8s 36 Evaluating Separable (200 states)...  F = 0.8525 +/- 0.1056
+75.8s 37 
+75.8s 38 PER-CHANNEL FIDELITY — 4-qubit
+75.8s 39 Channel |   Mean F |    Med F |     Std |     Min |     Max |  Purity
+75.8s 40 ------------------------------------------------------------------------------
+75.8s 41 Depolarized | 0.8149   | 0.8355   | 0.0938  | 0.0561  | 0.9681  | 0.8988
+75.8s 42 Werner | 0.9972   | 0.9975   | 0.0012  | 0.9938  | 0.9984  | 0.9057
+75.8s 43 Isotropic | 0.8167   | 0.8251   | 0.0938  | 0.0522  | 0.9479  | 0.9004
+75.8s 44 AmpDamped | 0.7971   | 0.8200   | 0.0961  | 0.0601  | 0.9152  | 0.9024
+75.8s 45 PhaseDamped | 0.7939   | 0.8162   | 0.0884  | 0.2902  | 0.9174  | 0.8984
+75.8s 46 Thermal | 0.7574   | 0.7764   | 0.0978  | 0.2206  | 0.8864  | 0.9120
+75.8s 47 Separable | 0.8525   | 0.8760   | 0.1056  | 0.1465  | 0.9579  | 0.8993
+75.8s 48 
+75.8s 49 Overall mean across channels: 0.8328
+75.8s 50 Hardest channel: Thermal
+75.8s 51 Easiest channel: Werner
+75.8s 52 Saved to: /kaggle/working/per_channel_4q.json
+75.8s 53 
+75.8s 54 Exp4 total time: 58s
+76.0s 55 Generating 500 test states (4-qubit)...
+78.5s 56 Test data: X=(500, 255), Rho=(500, 16, 16)
+78.5s 57 Running model inference...
+78.7s 58 
+78.7s 59 --- Test 1: Does eps=1e-12 matter in float32? ---
+79.0s 60 eps=1e-12 vs eps=1e-7 in float32:
+79.0s 61 max |diff|  = 0.00e+00
+79.0s 62 mean |diff| = 0.00e+00
+79.0s 63 
+79.0s 64 --- Test 2: float32 vs float64 fidelity ---
+79.4s 65 float32 vs float64 (torch):
+79.4s 66 max |diff|  = 7.99e-05
+79.4s 67 mean |diff| = 1.46e-05
+79.4s 68 float32 vs scipy-f64:
+79.4s 69 max |diff|  = 7.99e-05
+79.4s 70 mean |diff| = 1.46e-05
+79.4s 71 
+79.4s 72 --- Test 3: Aggregate fidelity impact ---
+79.4s 73 Mean F (float32 torch): 0.811794
+79.4s 74 Mean F (float64 torch): 0.811796
+79.4s 75 Mean F (scipy float64): 0.811796
+79.4s 76 |delta mean F| (f32 vs f64): 0.000002
+79.4s 77 
+79.4s 78 VERDICT: Precision difference is NEGLIGIBLE (<0.001)
+79.4s 79 
+79.4s 80 Saved to: /kaggle/working/float64_check_4q.json
+79.4s 81 
+79.4s 82 Exp6 total time: 4s
+79.5s 83 
+79.5s 84 ========================================================================
+79.5s 85 4-QUBIT EXP4 + EXP6 COMPLETE
+79.5s 86 ========================================================================
+79.5s 87 
+79.5s 88 Timing breakdown:
+79.5s 89 load_or_train:        0s  (0.0 min)
+79.5s 90 exp4:       58s  (1.0 min)
+79.5s 91 exp6:        4s  (0.1 min)
+79.5s 92 TOTAL:       62s  (1.0 min)
+79.5s 93 
+79.5s 94 Output files in /kaggle/working:
+79.5s 95 __notebook__.ipynb                                 55,966 bytes
+79.5s 96 float64_check_4q.json                                 354 bytes
+79.5s 97 per_channel_4q.json                                 2,198 bytes
+79.5s 98 
+79.5s 99 Done!
+85.0s 100 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+85.0s 101 cells[i][c] = re.sub('\\\\\|', '|', cell)
+85.2s 102 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+85.2s 103 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+85.8s 104 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+86.2s 105 [NbConvertApp] Writing 55854 bytes to __notebook__.ipynb
+88.8s 106 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+89.9s 107 [NbConvertApp] Writing 508147 bytes to __results__.html

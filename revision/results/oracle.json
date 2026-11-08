@@ -1,0 +1,216 @@
+{
+ "meta": {
+  "generated": "2026-11-01 00:50:54",
+  "testset_hashes": {
+   "2q": "9d4532d074176dae",
+   "3q": "da25db4933060ad1",
+   "4q": "8aacbc8af5cc9f25"
+  }
+ },
+ "ratio_table": [
+  {
+   "n": 2,
+   "circuit_params": 28,
+   "state_dim": 15,
+   "pure_state_dim": 6,
+   "params_over_state_dim": 1.8666666666666667
+  },
+  {
+   "n": 3,
+   "circuit_params": 50,
+   "state_dim": 63,
+   "pure_state_dim": 14,
+   "params_over_state_dim": 0.7936507936507936
+  },
+  {
+   "n": 4,
+   "circuit_params": 78,
+   "state_dim": 255,
+   "pure_state_dim": 30,
+   "params_over_state_dim": 0.3058823529411765
+  },
+  {
+   "n": 5,
+   "circuit_params": 112,
+   "state_dim": 1023,
+   "pure_state_dim": 62,
+   "params_over_state_dim": 0.10948191593352884
+  },
+  {
+   "n": 6,
+   "circuit_params": 152,
+   "state_dim": 4095,
+   "pure_state_dim": 126,
+   "params_over_state_dim": 0.03711843711843712
+  },
+  {
+   "n": 7,
+   "circuit_params": 198,
+   "state_dim": 16383,
+   "pure_state_dim": 254,
+   "params_over_state_dim": 0.012085698590001831
+  },
+  {
+   "n": 8,
+   "circuit_params": 250,
+   "state_dim": 65535,
+   "pure_state_dim": 510,
+   "params_over_state_dim": 0.0038147554741741053
+  },
+  {
+   "n": 9,
+   "circuit_params": 308,
+   "state_dim": 262143,
+   "pure_state_dim": 1022,
+   "params_over_state_dim": 0.0011749312398194878
+  },
+  {
+   "n": 10,
+   "circuit_params": 372,
+   "state_dim": 1048575,
+   "pure_state_dim": 2046,
+   "params_over_state_dim": 0.0003547671840354767
+  }
+ ],
+ "2q": {
+  "n_states": 210,
+  "circuit_params": 28,
+  "circuit64_max_abs_deviation_from_original": 2.0597411440904217e-07,
+  "settings": {
+   "model": "seed 42",
+   "restarts": 3,
+   "steps": 400,
+   "lr": 0.03,
+   "optimizer": "Adam",
+   "objective": "Uhlmann fidelity to the true state"
+  },
+  "model_F": 0.9710669776452315,
+  "per_state_fit_F": 0.9958181241590031,
+  "warm_start_only_F": 0.9951522221549728,
+  "random_init_only_F": 0.9951300079714973,
+  "per_family": {
+   "Depolarized": {
+    "model_F": 0.9682725786219971,
+    "per_state_fit_F": 0.9999642324499606
+   },
+   "Werner": {
+    "model_F": 0.9982240447535671,
+    "per_state_fit_F": 0.9999964196806134
+   },
+   "Isotropic": {
+    "model_F": 0.9845940688848999,
+    "per_state_fit_F": 0.9999489347601912
+   },
+   "AmpDamped": {
+    "model_F": 0.9578738299232226,
+    "per_state_fit_F": 0.9903410340226997
+   },
+   "PhaseDamped": {
+    "model_F": 0.9461459618114397,
+    "per_state_fit_F": 0.9952726405043758
+   },
+   "Thermal": {
+    "model_F": 0.9638895843930576,
+    "per_state_fit_F": 0.9865693205070342
+   },
+   "Separable": {
+    "model_F": 0.9784687751284378,
+    "per_state_fit_F": 0.9986342871881466
+   }
+  }
+ },
+ "3q": {
+  "n_states": 210,
+  "circuit_params": 50,
+  "circuit64_max_abs_deviation_from_original": 9.976072160141533e-08,
+  "settings": {
+   "model": "seed 42",
+   "restarts": 3,
+   "steps": 400,
+   "lr": 0.03,
+   "optimizer": "Adam",
+   "objective": "Uhlmann fidelity to the true state"
+  },
+  "model_F": 0.9264095045787204,
+  "per_state_fit_F": 0.9914981681712552,
+  "warm_start_only_F": 0.9908045386499079,
+  "random_init_only_F": 0.9900869337241813,
+  "per_family": {
+   "Depolarized": {
+    "model_F": 0.9165049139242272,
+    "per_state_fit_F": 0.9993015560895956
+   },
+   "Werner": {
+    "model_F": 0.9974740071132312,
+    "per_state_fit_F": 0.9992212369453971
+   },
+   "Isotropic": {
+    "model_F": 0.9208082331480336,
+    "per_state_fit_F": 0.999313936358709
+   },
+   "AmpDamped": {
+    "model_F": 0.9058659590802159,
+    "per_state_fit_F": 0.9838916219091447
+   },
+   "PhaseDamped": {
+    "model_F": 0.9123854566544962,
+    "per_state_fit_F": 0.9869229857345141
+   },
+   "Thermal": {
+    "model_F": 0.8986002196304831,
+    "per_state_fit_F": 0.9743941270550398
+   },
+   "Separable": {
+    "model_F": 0.9332277425003546,
+    "per_state_fit_F": 0.9974417131063876
+   }
+  }
+ },
+ "4q": {
+  "n_states": 210,
+  "circuit_params": 78,
+  "circuit64_max_abs_deviation_from_original": 7.608739323075046e-08,
+  "settings": {
+   "model": "seed 42",
+   "restarts": 3,
+   "steps": 400,
+   "lr": 0.03,
+   "optimizer": "Adam",
+   "objective": "Uhlmann fidelity to the true state"
+  },
+  "model_F": 0.8388631227471621,
+  "per_state_fit_F": 0.9870172258869588,
+  "warm_start_only_F": 0.986954547728476,
+  "random_init_only_F": 0.9844132715159554,
+  "per_family": {
+   "Depolarized": {
+    "model_F": 0.8115916699757099,
+    "per_state_fit_F": 0.9980190511296153
+   },
+   "Werner": {
+    "model_F": 0.9972205056982045,
+    "per_state_fit_F": 0.999059146355269
+   },
+   "Isotropic": {
+    "model_F": 0.8387696451461278,
+    "per_state_fit_F": 0.99821896664888
+   },
+   "AmpDamped": {
+    "model_F": 0.7890244447026438,
+    "per_state_fit_F": 0.9749976307346337
+   },
+   "PhaseDamped": {
+    "model_F": 0.7967068555572305,
+    "per_state_fit_F": 0.9784723091821216
+   },
+   "Thermal": {
+    "model_F": 0.7854810945253371,
+    "per_state_fit_F": 0.9688721169303937
+   },
+   "Separable": {
+    "model_F": 0.8532476436248818,
+    "per_state_fit_F": 0.9914813602277985
+   }
+  }
+ }
+}

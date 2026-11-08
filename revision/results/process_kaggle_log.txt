@@ -1,0 +1,38 @@
+=== fidelity (ablation) ===
+2q lambda_m=0: F 0.9827 ± 0.0012 (no Werner 0.9800)
+2q lambda_m=0.2: F 0.9777 ± 0.0015 (no Werner 0.9743)
+3q lambda_m=0: F 0.9336 ± 0.0036 (no Werner 0.9230)
+3q lambda_m=0.2: F 0.9271 ± 0.0038 (no Werner 0.9154)
+4q lambda_m=0: F 0.8476 ± 0.0039 (no Werner 0.8229)
+4q lambda_m=0.2: F 0.8345 ± 0.0068 (no Werner 0.8077)
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\fidelity_ablation.json
+=== fidelity finished in 26s ===
+=== geometry (ablation) ===
+2q lambda_m=0: r all 0.604, no-Werner 0.425; rho_s all 0.519; kappa 0.0056  [82s]
+2q lambda_m=0.2: r all 0.908, no-Werner 0.829; rho_s all 0.837; kappa 0.0096  [82s]
+3q lambda_m=0: r all 0.608, no-Werner 0.320; rho_s all 0.336; kappa 0.0058  [73s]
+3q lambda_m=0.2: r all 0.798, no-Werner 0.432; rho_s all 0.544; kappa 0.0110  [73s]
+4q lambda_m=0: r all 0.574, no-Werner 0.222; rho_s all 0.148; kappa 0.0395  [46s]
+4q lambda_m=0.2: r all 0.826, no-Werner 0.264; rho_s all 0.442; kappa 0.0553  [46s]
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\geometry_ablation.json
+=== geometry finished in 201s ===
+38 run files found
+main 2q: 1 distinct (train, val, nbcore) hash set(s) -> OK
+main 3q: 1 distinct (train, val, nbcore) hash set(s) -> OK
+main 4q: 1 distinct (train, val, nbcore) hash set(s) -> OK
+pareto 3q: 1 distinct (train, val, nbcore) hash set(s) -> OK
+2q: F 0.983 -> 0.978 (diff -0.005 [-0.007, -0.003]); pearson_all 0.604 -> 0.908 (diff +0.304 [+0.279, +0.329]); pearson_no_werner 0.425 -> 0.829 (diff +0.405 [+0.382, +0.427]); spearman_no_werner 0.431 -> 0.782 (diff +0.351 [+0.320, +0.381])
+3q: F 0.934 -> 0.927 (diff -0.006 [-0.010, -0.003]); pearson_all 0.608 -> 0.798 (diff +0.190 [+0.158, +0.222]); pearson_no_werner 0.320 -> 0.432 (diff +0.113 [+0.098, +0.127]); spearman_no_werner 0.296 -> 0.373 (diff +0.078 [+0.063, +0.093])
+4q: F 0.848 -> 0.834 (diff -0.013 [-0.040, +0.013]); pearson_all 0.574 -> 0.826 (diff +0.252 [+0.149, +0.354]); pearson_no_werner 0.222 -> 0.264 (diff +0.042 [+0.027, +0.057]); spearman_no_werner 0.191 -> 0.225 (diff +0.034 [+0.024, +0.044])
+  lambda_m 0.0  lambda_p 1.0  F 0.912 r 0.567 purity MAE 0.0260 epochs 200
+  lambda_m 0.0  lambda_p 2.0  F 0.906 r 0.557 purity MAE 0.0263 epochs 200
+  lambda_m 0.0  lambda_p 5.0  F 0.901 r 0.590 purity MAE 0.0252 epochs 200
+  lambda_m 0.1  lambda_p 1.0  F 0.907 r 0.729 purity MAE 0.0259 epochs 200
+  lambda_m 0.1  lambda_p 2.0  F 0.907 r 0.723 purity MAE 0.0260 epochs 200
+  lambda_m 0.1  lambda_p 5.0  F 0.902 r 0.737 purity MAE 0.0259 epochs 200
+  lambda_m 0.2  lambda_p 1.0  F 0.904 r 0.768 purity MAE 0.0259 epochs 200
+  lambda_m 0.2  lambda_p 2.0  F 0.899 r 0.766 purity MAE 0.0259 epochs 200
+  lambda_m 0.2  lambda_p 5.0  F 0.888 r 0.759 purity MAE 0.0258 epochs 200
+  lambda_m 0.5  lambda_p 1.0  F 0.878 r 0.772 purity MAE 0.0259 epochs 200
+  lambda_m 0.5  lambda_p 2.0  F 0.882 r 0.785 purity MAE 0.0261 epochs 200
+  lambda_m 0.5  lambda_p 5.0  F 0.881 r 0.783 purity MAE 0.0258 epochs 200

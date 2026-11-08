@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "generated": "2026-11-01 01:05:25",
+  "testset_hashes": {
+   "2q": "9d4532d074176dae",
+   "3q": "da25db4933060ad1",
+   "4q": "8aacbc8af5cc9f25"
+  }
+ },
+ "2q": {
+  "latent_distance_s_per_pair": 2.5735999988683033e-07,
+  "exact_fidelity_s_per_pair": 5.144989999826066e-06,
+  "speedup": 19.991412815078053,
+  "encoder_s_per_state": 2.075614285526431e-06,
+  "latent_dim": 18,
+  "matrix_dim": 4,
+  "note": "CPU, 8 threads, batched numpy over 10,000 pairs, best of 7"
+ },
+ "3q": {
+  "latent_distance_s_per_pair": 3.5000999996555037e-07,
+  "exact_fidelity_s_per_pair": 1.398827999983041e-05,
+  "speedup": 39.96537242137997,
+  "encoder_s_per_state": 4.6957142850650207e-07,
+  "latent_dim": 28,
+  "matrix_dim": 8,
+  "note": "CPU, 8 threads, batched numpy over 10,000 pairs, best of 7"
+ },
+ "4q": {
+  "latent_distance_s_per_pair": 4.870299999311101e-07,
+  "exact_fidelity_s_per_pair": 5.3972040000007834e-05,
+  "speedup": 110.81871754849213,
+  "encoder_s_per_state": 2.810600000105166e-06,
+  "latent_dim": 38,
+  "matrix_dim": 16,
+  "note": "CPU, 8 threads, batched numpy over 10,000 pairs, best of 7"
+ }
+}

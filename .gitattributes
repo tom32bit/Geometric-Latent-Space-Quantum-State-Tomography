@@ -1,0 +1,2 @@
+# LF line endings on every platform, so file checksums (e.g. of revision/nbcore.py) match.
+* text=auto eol=lf

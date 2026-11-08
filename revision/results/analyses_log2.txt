@@ -1,0 +1,22 @@
+=== shots (original) ===
+2q original seed 42: F inf 0.9791 | 10k 0.9790 | 1k 0.9776 | 100 0.9632  [23s]
+2q original seed 123: F inf 0.9750 | 10k 0.9749 | 1k 0.9735 | 100 0.9605  [42s]
+2q original seed 256: F inf 0.9796 | 10k 0.9794 | 1k 0.9782 | 100 0.9652  [61s]
+2q original seed 789: F inf 0.9803 | 10k 0.9802 | 1k 0.9789 | 100 0.9663  [81s]
+2q original seed 1024: F inf 0.9817 | 10k 0.9816 | 1k 0.9803 | 100 0.9669  [101s]
+3q original seed 42: F inf 0.9259 | 10k 0.9249 | 1k 0.9166 | 100 0.8555  [48s]
+3q original seed 123: F inf 0.9209 | 10k 0.9199 | 1k 0.9122 | 100 0.8537  [92s]
+3q original seed 256: F inf 0.9205 | 10k 0.9196 | 1k 0.9119 | 100 0.8539  [136s]
+3q original seed 789: F inf 0.9282 | 10k 0.9272 | 1k 0.9188 | 100 0.8585  [188s]
+3q original seed 1024: F inf 0.9254 | 10k 0.9245 | 1k 0.9163 | 100 0.8544  [232s]
+4q original seed 42: F inf 0.8341 | 10k 0.8324 | 1k 0.8181 | 100 0.7215  [121s]
+4q original seed 123: F inf 0.8330 | 10k 0.8313 | 1k 0.8167 | 100 0.7196  [234s]
+4q original seed 256: F inf 0.8337 | 10k 0.8319 | 1k 0.8169 | 100 0.7185  [355s]
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\shots_original.json
+=== shots finished in 690s ===
+=== timing (original) ===
+2q: latent 257 ns/pair, fidelity 5.1 µs/pair, speedup 20x, encoder 2.1 µs/state
+3q: latent 350 ns/pair, fidelity 14.0 µs/pair, speedup 40x, encoder 0.5 µs/state
+4q: latent 487 ns/pair, fidelity 54.0 µs/pair, speedup 111x, encoder 2.8 µs/state
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\timing.json
+=== timing finished in 6s ===

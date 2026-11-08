@@ -1,0 +1,100 @@
+7.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.2s 3 0.00s - to python to disable frozen modules.
+7.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.8s 7 0.00s - to python to disable frozen modules.
+7.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+16.4s 9 Device: cuda
+16.4s 10 Output: /kaggle/working
+16.4s 11 setup_pauli_basis() defined.
+16.4s 12 Model classes defined: TorchDMCircuit, Encoder, HybridAE
+16.5s 13 All utility functions defined.
+17.0s 14 Pauli basis: 2q, dim=4, n_pauli_nonid=15, n_layers=4, n_angles=24
+18.3s 15 
+18.3s 16 2q: max_rho_err=2.49e-07, max_exp_err=4.29e-07 -> PASS
+18.3s 17 Pauli basis: 3q, dim=8, n_pauli_nonid=63, n_layers=5, n_angles=45
+21.1s 18 
+21.1s 19 3q: max_rho_err=2.09e-07, max_exp_err=3.72e-07 -> PASS
+21.1s 20 
+21.1s 21 Exp5 complete: 5s
+21.1s 22 train_one_seed() defined.
+21.1s 23 
+21.1s 24 ========================================================================
+21.1s 25 EXPERIMENT 1 — 2-QUBIT SEED VARIANCE (5 seeds)
+21.1s 26 ========================================================================
+21.1s 27 Pauli basis: 2q, dim=4, n_pauli_nonid=15, n_layers=4, n_angles=24
+21.1s 28 n_train=5000, n_val=833, batch=64, latent=20
+21.1s 29 Generating training dataset...
+23.1s 30 Depolarized: requesting 715 ... got 715
+23.9s 31 Werner: requesting 715 ... got 715
+24.8s 32 Isotropic: requesting 714 ... got 714
+38.8s 33 AmpDamped: requesting 714 ... got 714
+57.7s 34 PhaseDamped: requesting 714 ... got 714
+67.7s 35 Thermal: requesting 714 ... got 714
+69.2s 36 Separable: requesting 714 ... got 714
+69.2s 37 Total 5000 | purity [0.840, 0.960] mean=0.906
+69.2s 38 Generating validation dataset...
+69.8s 39 Depolarized: requesting 119 ... got 119
+70.2s 40 Werner: requesting 119 ... got 119
+70.8s 41 Isotropic: requesting 119 ... got 119
+73.4s 42 AmpDamped: requesting 119 ... got 119
+76.4s 43 PhaseDamped: requesting 119 ... got 119
+78.2s 44 Thermal: requesting 119 ... got 119
+79.0s 45 Separable: requesting 119 ... got 119
+79.0s 46 Total 833 | purity [0.840, 0.960] mean=0.905
+79.0s 47 Dataset: train=(5000, 15), val=(833, 15)
+79.0s 48 
+79.0s 49 ============================================================
+79.0s 50 SEED 42 -- 2-qubit training
+79.0s 51 ============================================================
+88.5s 52 Traceback (most recent call last):
+88.5s 53 File "<string>", line 1, in <module>
+88.5s 54 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+88.5s 55 raise_for_execution_errors(nb, output_path)
+88.5s 56 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+88.5s 57 raise error
+88.5s 58 papermill.exceptions.PapermillExecutionError:
+88.5s 59 ---------------------------------------------------------------------------
+88.5s 60 Exception encountered at "In [7]":
+88.5s 61 ---------------------------------------------------------------------------
+88.5s 62 RuntimeError                              Traceback (most recent call last)
+88.5s 63 /tmp/ipykernel_23/2511797690.py in <cell line: 0>()
+88.5s 64 31     all_results = []
+88.5s 65 32     for s in SEEDS:
+88.5s 66 ---> 33         res, best_state = train_one_seed(
+88.5s 67 34             s, X_train_np, Rho_train_np, X_val_np, Rho_val_np,
+88.5s 68 35             latent_dim=latent_dim_, batch_size=bs, max_epochs=600)
+88.5s 69 
+88.5s 70 /tmp/ipykernel_23/3790982252.py in train_one_seed(seed_val, X_train_np, Rho_train_np, X_val_np, Rho_val_np, latent_dim, batch_size, max_epochs, lr, lambda_metric, lambda_purity, lambda_purity_enc, eval_every, early_stop_patience, n_geodesic_pairs)
+88.5s 71 37             preds, z, z_geom, z_pur = model(x_batch)
+88.5s 72 38             rho_pred = pauli_exps_to_rho_torch(preds)
+88.5s 73 ---> 39             F_batch = uhlmann_fidelity_batch(rho_pred, rho_true_batch)
+88.5s 74 40             loss_recon = 1.0 - F_batch.mean()
+88.5s 75 41             purity_pred = torch.einsum('bij,bji->b', rho_pred, rho_pred).real
+88.5s 76 
+88.5s 77 /tmp/ipykernel_23/934705719.py in uhlmann_fidelity_batch(rho_a, rho_b, eps)
+88.5s 78 169
+88.5s 79 170 def uhlmann_fidelity_batch(rho_a, rho_b, eps=1e-12):
+88.5s 80 --> 171     sqrt_a = sqrtm_psd_torch(rho_a, eps); M = sqrt_a @ rho_b @ sqrt_a
+88.5s 81 172     eigvals = torch.clamp(torch.linalg.eigvalsh(M).real, min=0.0)
+88.5s 82 173     return torch.clamp(torch.sum(torch.sqrt(eigvals), dim=-1)**2, 0.0, 1.0)
+88.5s 83 
+88.5s 84 /tmp/ipykernel_23/934705719.py in sqrtm_psd_torch(A, eps)
+88.5s 85 166     eigvals, eigvecs = torch.linalg.eigh(A)
+88.5s 86 167     eigvals = torch.clamp(eigvals, min=eps)
+88.5s 87 --> 168     return eigvecs @ torch.diag_embed(torch.sqrt(eigvals)) @ eigvecs.conj().transpose(-2,-1)
+88.5s 88 169
+88.5s 89 170 def uhlmann_fidelity_batch(rho_a, rho_b, eps=1e-12):
+88.5s 90 
+88.5s 91 RuntimeError: expected scalar type ComplexFloat but found Float
+88.5s 92 
+90.6s 93 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+90.6s 94 cells[i][c] = re.sub('\\\\\|', '|', cell)
+90.7s 95 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+90.7s 96 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+91.3s 97 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+91.6s 98 [NbConvertApp] Writing 97413 bytes to __notebook__.ipynb
+93.9s 99 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+95.1s 100 [NbConvertApp] Writing 692210 bytes to __results__.html

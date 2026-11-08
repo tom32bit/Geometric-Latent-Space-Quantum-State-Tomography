@@ -1,0 +1,451 @@
+8.9s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.9s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.9s 3 0.00s - to python to disable frozen modules.
+8.9s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.6s 7 0.00s - to python to disable frozen modules.
+9.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+20.0s 9 Device: cuda
+20.0s 10 Output: /kaggle/working
+20.1s 11 setup_pauli_basis() defined.
+20.1s 12 Model classes defined: TorchDMCircuit, Encoder, HybridAE
+20.2s 13 All utility functions defined.
+20.8s 14 Pauli basis: 2q, dim=4, n_pauli_nonid=15, n_layers=4, n_angles=24
+22.4s 15 
+22.4s 16 2q: max_rho_err=2.49e-07, max_exp_err=4.29e-07 -> PASS
+22.4s 17 Pauli basis: 3q, dim=8, n_pauli_nonid=63, n_layers=5, n_angles=45
+25.7s 18 
+25.7s 19 3q: max_rho_err=2.09e-07, max_exp_err=3.72e-07 -> PASS
+25.7s 20 
+25.7s 21 Exp5 complete: 5s
+25.8s 22 train_one_seed() defined.
+25.8s 23 
+25.8s 24 ========================================================================
+25.8s 25 EXPERIMENT 1 — 2-QUBIT SEED VARIANCE (5 seeds)
+25.8s 26 ========================================================================
+25.8s 27 Pauli basis: 2q, dim=4, n_pauli_nonid=15, n_layers=4, n_angles=24
+25.8s 28 n_train=5000, n_val=833, batch=64, latent=20
+25.8s 29 Generating training dataset...
+28.2s 30 Depolarized: requesting 715 ... got 715
+29.1s 31 Werner: requesting 715 ... got 715
+30.4s 32 Isotropic: requesting 714 ... got 714
+48.6s 33 AmpDamped: requesting 714 ... got 714
+71.2s 34 PhaseDamped: requesting 714 ... got 714
+83.4s 35 Thermal: requesting 714 ... got 714
+85.1s 36 Separable: requesting 714 ... got 714
+85.1s 37 Total 5000 | purity [0.840, 0.960] mean=0.905
+85.1s 38 Generating validation dataset...
+85.8s 39 Depolarized: requesting 119 ... got 119
+86.3s 40 Werner: requesting 119 ... got 119
+86.9s 41 Isotropic: requesting 119 ... got 119
+89.8s 42 AmpDamped: requesting 119 ... got 119
+93.7s 43 PhaseDamped: requesting 119 ... got 119
+95.8s 44 Thermal: requesting 119 ... got 119
+96.8s 45 Separable: requesting 119 ... got 119
+96.8s 46 Total 833 | purity [0.840, 0.960] mean=0.905
+96.8s 47 Dataset: train=(5000, 15), val=(833, 15)
+96.8s 48 
+96.8s 49 ============================================================
+96.8s 50 SEED 42 -- 2-qubit training
+96.8s 51 ============================================================
+109.8s 52 Ep 001 | val F 0.8722 | 7s
+125.0s 53 Ep 005 | val F 0.9591 | 22s
+291.0s 54 Ep 050 | val F 0.9744 | 188s
+478.4s 55 Ep 100 | val F 0.9774 | 375s
+666.6s 56 Ep 150 | val F 0.9777 | 563s
+853.3s 57 Ep 200 | val F 0.9773 | 750s
+1041.0s 58 Ep 250 | val F 0.9803 | 938s
+1230.2s 59 Ep 300 | val F 0.9814 | 1127s
+1420.1s 60 Ep 350 | val F 0.9815 | 1317s
+1477.2s 61 Early stopping at epoch 365
+1478.7s 62 F=0.9817, r=0.9437, PCA95=14, curv=0.00451
+1478.7s 63 Checkpoint saved: /kaggle/working/model_2q_seed42.pt
+1478.7s 64 
+1478.7s 65 ============================================================
+1478.7s 66 SEED 123 -- 2-qubit training
+1478.7s 67 ============================================================
+1482.6s 68 Ep 001 | val F 0.8785 | 4s
+1497.8s 69 Ep 005 | val F 0.9531 | 19s
+1660.6s 70 Ep 050 | val F 0.9727 | 182s
+1846.1s 71 Ep 100 | val F 0.9728 | 367s
+2030.9s 72 Ep 150 | val F 0.9781 | 552s
+2203.8s 73 Ep 200 | val F 0.9790 | 725s
+2336.5s 74 Early stopping at epoch 240
+2337.7s 75 F=0.9797, r=0.9228, PCA95=13, curv=0.00356
+2337.7s 76 Checkpoint saved: /kaggle/working/model_2q_seed123.pt
+2337.7s 77 
+2337.7s 78 ============================================================
+2337.7s 79 SEED 256 -- 2-qubit training
+2337.7s 80 ============================================================
+2341.0s 81 Ep 001 | val F 0.8952 | 3s
+2354.4s 82 Ep 005 | val F 0.9566 | 17s
+2501.0s 83 Ep 050 | val F 0.9748 | 163s
+2677.0s 84 Ep 100 | val F 0.9770 | 339s
+2867.9s 85 Ep 150 | val F 0.9774 | 530s
+3060.4s 86 Ep 200 | val F 0.9770 | 723s
+3099.0s 87 Early stopping at epoch 210
+3100.3s 88 F=0.9788, r=0.9040, PCA95=13, curv=0.00337
+3100.3s 89 Checkpoint saved: /kaggle/working/model_2q_seed256.pt
+3100.3s 90 
+3100.3s 91 ============================================================
+3100.3s 92 SEED 789 -- 2-qubit training
+3100.3s 93 ============================================================
+3104.2s 94 Ep 001 | val F 0.8843 | 4s
+3119.7s 95 Ep 005 | val F 0.9555 | 19s
+3293.6s 96 Ep 050 | val F 0.9712 | 193s
+3483.3s 97 Ep 100 | val F 0.9750 | 383s
+3676.3s 98 Ep 150 | val F 0.9747 | 576s
+3869.7s 99 Ep 200 | val F 0.9774 | 769s
+4062.4s 100 Ep 250 | val F 0.9779 | 962s
+4138.5s 101 Early stopping at epoch 270
+4139.8s 102 F=0.9781, r=0.9335, PCA95=14, curv=0.00416
+4139.8s 103 Checkpoint saved: /kaggle/working/model_2q_seed789.pt
+4139.8s 104 
+4139.8s 105 ============================================================
+4139.8s 106 SEED 1024 -- 2-qubit training
+4139.8s 107 ============================================================
+4143.8s 108 Ep 001 | val F 0.8845 | 4s
+4159.0s 109 Ep 005 | val F 0.9556 | 19s
+4332.7s 110 Ep 050 | val F 0.9700 | 193s
+4525.4s 111 Ep 100 | val F 0.9722 | 385s
+4716.1s 112 Ep 150 | val F 0.9751 | 576s
+4905.3s 113 Ep 200 | val F 0.9778 | 765s
+5075.7s 114 Early stopping at epoch 245
+5076.8s 115 F=0.9800, r=0.9204, PCA95=13, curv=0.00367
+5076.8s 116 Checkpoint saved: /kaggle/working/model_2q_seed1024.pt
+5076.8s 117 
+5076.8s 118 SEED VARIANCE SUMMARY — 2-qubit (5 seeds)
+5076.8s 119 ------------------------------------------------------------
+5076.8s 120 mean_fidelity: 0.9797 +/- 0.0012  (range: 0.9781 - 0.9817)
+5076.8s 121 median_fidelity: 0.9860 +/- 0.0013  (range: 0.9836 - 0.9870)
+5076.8s 122 pearson_r: 0.9249 +/- 0.0133  (range: 0.9040 - 0.9437)
+5076.8s 123 spearman_rho: 0.8738 +/- 0.0171  (range: 0.8443 - 0.8973)
+5076.8s 124 r_squared: 0.8556 +/- 0.0246  (range: 0.8173 - 0.8905)
+5076.8s 125 pca_dim_95: 13.4000 +/- 0.4899  (range: 13.0000 - 14.0000)
+5076.8s 126 mean_curvature: 0.0039 +/- 0.0004  (range: 0.0034 - 0.0045)
+5076.8s 127 shot_10k_mean: 0.9794 +/- 0.0011  (range: 0.9776 - 0.9810)
+5076.8s 128 shot_1k_mean: 0.9709 +/- 0.0030  (range: 0.9664 - 0.9737)
+5076.8s 129 shot_100_mean: 0.9858 +/- 0.0042  (range: 0.9789 - 0.9914)
+5076.8s 130 
+5076.8s 131 ========================================================================
+5076.8s 132 EXPERIMENT 1 — 3-QUBIT SEED VARIANCE (5 seeds)
+5076.8s 133 ========================================================================
+5076.8s 134 Pauli basis: 3q, dim=8, n_pauli_nonid=63, n_layers=5, n_angles=45
+5076.8s 135 n_train=18900, n_val=3150, batch=256, latent=30
+5076.8s 136 Generating training dataset...
+5085.2s 137 Depolarized: requesting 2700 ... got 2700
+5090.5s 138 Werner: requesting 2700 ... got 2700
+5098.0s 139 Isotropic: requesting 2700 ... got 2700
+5229.7s 140 AmpDamped: requesting 2700 ... got 2700
+5562.0s 141 PhaseDamped: requesting 2700 ... got 2700
+5632.8s 142 Thermal: requesting 2700 ... got 2700
+5644.8s 143 Separable: requesting 2700 ... got 2700
+5644.9s 144 Total 18900 | purity [0.840, 0.960] mean=0.904
+5644.9s 145 Generating validation dataset...
+5646.4s 146 Depolarized: requesting 450 ... got 450
+5647.7s 147 Werner: requesting 450 ... got 450
+5649.1s 148 Isotropic: requesting 450 ... got 450
+5670.9s 149 AmpDamped: requesting 450 ... got 450
+5726.6s 150 PhaseDamped: requesting 450 ... got 450
+5738.5s 151 Thermal: requesting 450 ... got 450
+5741.0s 152 Separable: requesting 450 ... got 450
+5741.0s 153 Total 3150 | purity [0.840, 0.959] mean=0.903
+5741.0s 154 Dataset: train=(18900, 63), val=(3150, 63)
+5741.0s 155 
+5741.0s 156 ============================================================
+5741.0s 157 SEED 42 -- 3-qubit training
+5741.0s 158 ============================================================
+5747.7s 159 Ep 001 | val F 0.5146 | 7s
+5773.1s 160 Ep 005 | val F 0.7947 | 32s
+6057.0s 161 Ep 050 | val F 0.8998 | 316s
+6374.6s 162 Ep 100 | val F 0.9072 | 634s
+6690.1s 163 Ep 150 | val F 0.9106 | 949s
+7002.5s 164 Ep 200 | val F 0.9130 | 1261s
+7313.5s 165 Ep 250 | val F 0.9152 | 1572s
+7624.8s 166 Ep 300 | val F 0.9164 | 1884s
+7934.1s 167 Ep 350 | val F 0.9207 | 2193s
+8241.1s 168 Ep 400 | val F 0.9214 | 2500s
+8545.5s 169 Ep 450 | val F 0.9234 | 2804s
+8839.1s 170 Ep 500 | val F 0.9240 | 3098s
+8956.2s 171 Early stopping at epoch 520
+8963.9s 172 F=0.9243, r=0.8218, PCA95=21, curv=0.01167
+8963.9s 173 Checkpoint saved: /kaggle/working/model_3q_seed42.pt
+8963.9s 174 
+8963.9s 175 ============================================================
+8963.9s 176 SEED 123 -- 3-qubit training
+8963.9s 177 ============================================================
+8969.9s 178 Ep 001 | val F 0.5178 | 6s
+8993.2s 179 Ep 005 | val F 0.8078 | 29s
+9247.5s 180 Ep 050 | val F 0.8989 | 284s
+9520.9s 181 Ep 100 | val F 0.9074 | 557s
+9792.3s 182 Ep 150 | val F 0.9106 | 828s
+10087.1s 183 Ep 200 | val F 0.9128 | 1123s
+10380.2s 184 Ep 250 | val F 0.9135 | 1416s
+10669.3s 185 Ep 300 | val F 0.9133 | 1705s
+10966.9s 186 Ep 350 | val F 0.9159 | 2003s
+11264.2s 187 Ep 400 | val F 0.9207 | 2300s
+11563.9s 188 Ep 450 | val F 0.9223 | 2600s
+11850.5s 189 Ep 500 | val F 0.9229 | 2887s
+12136.3s 190 Ep 550 | val F 0.9238 | 3172s
+12405.1s 191 Ep 600 | val F 0.9248 | 3441s
+12412.2s 192 F=0.9251, r=0.7583, PCA95=21, curv=0.01122
+12412.2s 193 Checkpoint saved: /kaggle/working/model_3q_seed123.pt
+12412.2s 194 
+12412.2s 195 ============================================================
+12412.2s 196 SEED 256 -- 3-qubit training
+12412.2s 197 ============================================================
+12417.8s 198 Ep 001 | val F 0.5061 | 6s
+12439.2s 199 Ep 005 | val F 0.8080 | 27s
+12676.4s 200 Ep 050 | val F 0.9005 | 264s
+12936.7s 201 Ep 100 | val F 0.9113 | 524s
+13193.6s 202 Ep 150 | val F 0.9139 | 781s
+13449.6s 203 Ep 200 | val F 0.9172 | 1037s
+13705.4s 204 Ep 250 | val F 0.9206 | 1293s
+13961.2s 205 Ep 300 | val F 0.9203 | 1549s
+14222.8s 206 Ep 350 | val F 0.9226 | 1811s
+14478.9s 207 Ep 400 | val F 0.9229 | 2067s
+14581.1s 208 Early stopping at epoch 420
+14587.7s 209 F=0.9236, r=0.8105, PCA95=20, curv=0.01089
+14587.7s 210 Checkpoint saved: /kaggle/working/model_3q_seed256.pt
+14587.7s 211 
+14587.7s 212 ============================================================
+14587.7s 213 SEED 789 -- 3-qubit training
+14587.7s 214 ============================================================
+14593.1s 215 Ep 001 | val F 0.5336 | 5s
+14613.7s 216 Ep 005 | val F 0.8007 | 26s
+14857.3s 217 Ep 050 | val F 0.8914 | 270s
+15144.7s 218 Ep 100 | val F 0.9063 | 557s
+15415.8s 219 Ep 150 | val F 0.9114 | 828s
+15677.1s 220 Ep 200 | val F 0.9152 | 1089s
+15936.3s 221 Ep 250 | val F 0.9180 | 1349s
+16196.2s 222 Ep 300 | val F 0.9201 | 1608s
+16458.4s 223 Ep 350 | val F 0.9212 | 1871s
+16717.3s 224 Ep 400 | val F 0.9207 | 2130s
+16898.3s 225 Early stopping at epoch 435
+16905.1s 226 F=0.9235, r=0.8396, PCA95=21, curv=0.01102
+16905.1s 227 Checkpoint saved: /kaggle/working/model_3q_seed789.pt
+16905.1s 228 
+16905.1s 229 ============================================================
+16905.1s 230 SEED 1024 -- 3-qubit training
+16905.1s 231 ============================================================
+16910.5s 232 Ep 001 | val F 0.5113 | 5s
+16931.3s 233 Ep 005 | val F 0.8076 | 26s
+17165.8s 234 Ep 050 | val F 0.8990 | 261s
+17427.0s 235 Ep 100 | val F 0.9055 | 522s
+17707.4s 236 Ep 150 | val F 0.9093 | 802s
+18003.9s 237 Ep 200 | val F 0.9126 | 1099s
+18321.8s 238 Ep 250 | val F 0.9147 | 1417s
+18638.3s 239 Ep 300 | val F 0.9159 | 1733s
+18956.7s 240 Ep 350 | val F 0.9164 | 2052s
+19263.3s 241 Ep 400 | val F 0.9187 | 2358s
+19548.0s 242 Ep 450 | val F 0.9182 | 2643s
+19701.9s 243 Early stopping at epoch 475
+19709.0s 244 F=0.9194, r=0.7169, PCA95=21, curv=0.01246
+19709.0s 245 Checkpoint saved: /kaggle/working/model_3q_seed1024.pt
+19709.0s 246 
+19709.0s 247 SEED VARIANCE SUMMARY — 3-qubit (5 seeds)
+19709.0s 248 ------------------------------------------------------------
+19709.0s 249 mean_fidelity: 0.9232 +/- 0.0019  (range: 0.9194 - 0.9251)
+19709.0s 250 median_fidelity: 0.9349 +/- 0.0023  (range: 0.9307 - 0.9375)
+19709.0s 251 pearson_r: 0.7894 +/- 0.0452  (range: 0.7169 - 0.8396)
+19709.0s 252 spearman_rho: 0.5217 +/- 0.0298  (range: 0.4811 - 0.5563)
+19709.0s 253 r_squared: 0.6252 +/- 0.0704  (range: 0.5140 - 0.7049)
+19709.0s 254 pca_dim_95: 20.8000 +/- 0.4000  (range: 20.0000 - 21.0000)
+19709.0s 255 mean_curvature: 0.0115 +/- 0.0006  (range: 0.0109 - 0.0125)
+19709.0s 256 shot_10k_mean: 0.9183 +/- 0.0065  (range: 0.9108 - 0.9269)
+19709.0s 257 shot_1k_mean: 0.9296 +/- 0.0035  (range: 0.9249 - 0.9347)
+19709.0s 258 shot_100_mean: 0.9613 +/- 0.0099  (range: 0.9482 - 0.9748)
+19709.0s 259 
+19709.0s 260 Exp1 total time: 19683s
+19709.1s 261 Pauli basis: 3q, dim=8, n_pauli_nonid=63, n_layers=5, n_angles=45
+19709.1s 262 Generating 3q dataset for latent dim ablation...
+19712.5s 263 Depolarized: requesting 715 ... got 715
+19714.2s 264 Werner: requesting 715 ... got 715
+19716.7s 265 Isotropic: requesting 714 ... got 714
+19750.5s 266 AmpDamped: requesting 714 ... got 714
+19836.5s 267 PhaseDamped: requesting 714 ... got 714
+19854.9s 268 Thermal: requesting 714 ... got 714
+19858.2s 269 Separable: requesting 714 ... got 714
+19858.2s 270 Total 5000 | purity [0.840, 0.960] mean=0.904
+19859.0s 271 Depolarized: requesting 115 ... got 115
+19859.7s 272 Werner: requesting 115 ... got 115
+19860.5s 273 Isotropic: requesting 114 ... got 114
+19866.0s 274 AmpDamped: requesting 114 ... got 114
+19879.6s 275 PhaseDamped: requesting 114 ... got 114
+19882.6s 276 Thermal: requesting 114 ... got 114
+19883.8s 277 Separable: requesting 114 ... got 114
+19883.8s 278 Total 800 | purity [0.840, 0.960] mean=0.904
+19883.8s 279 Dataset: train=(5000, 63), val=(800, 63)
+19883.8s 280 
+19883.8s 281 ============================================================
+19883.8s 282 LATENT DIM = 10 (3-qubit)
+19883.8s 283 ============================================================
+19883.8s 284 Trainable params: 18,032
+20193.7s 285 Ep 050 | val F 0.7617 | 310s
+20494.0s 286 Ep 100 | val F 0.7845 | 610s
+20793.5s 287 Ep 150 | val F 0.7899 | 910s
+21077.5s 288 Ep 200 | val F 0.7949 | 1194s
+21077.5s 289 Result: F=0.7949, r=0.6880, rho=0.3822, PCA95=8
+21077.5s 290 
+21077.5s 291 ============================================================
+21077.5s 292 LATENT DIM = 20 (3-qubit)
+21077.5s 293 ============================================================
+21077.5s 294 Trainable params: 19,182
+21362.4s 295 Ep 050 | val F 0.8776 | 285s
+21648.5s 296 Ep 100 | val F 0.8873 | 571s
+21944.6s 297 Ep 150 | val F 0.8919 | 867s
+22225.8s 298 Ep 200 | val F 0.8936 | 1148s
+22226.0s 299 Result: F=0.8936, r=0.7729, rho=0.4775, PCA95=15
+22226.0s 300 
+22226.0s 301 ============================================================
+22226.0s 302 LATENT DIM = 30 (3-qubit)
+22226.0s 303 ============================================================
+22226.0s 304 Trainable params: 20,332
+22506.1s 305 Ep 050 | val F 0.8814 | 280s
+22784.7s 306 Ep 100 | val F 0.8899 | 559s
+23063.2s 307 Ep 150 | val F 0.8960 | 837s
+23337.7s 308 Ep 200 | val F 0.9072 | 1112s
+23337.7s 309 Result: F=0.9072, r=0.7925, rho=0.4802, PCA95=20
+23337.7s 310 
+23337.7s 311 ============================================================
+23337.7s 312 LATENT DIM = 40 (3-qubit)
+23337.7s 313 ============================================================
+23337.7s 314 Trainable params: 21,482
+23614.2s 315 Ep 050 | val F 0.8873 | 276s
+23888.4s 316 Ep 100 | val F 0.8973 | 550s
+24173.2s 317 Ep 150 | val F 0.9007 | 835s
+24468.3s 318 Ep 200 | val F 0.9074 | 1130s
+24468.5s 319 Result: F=0.9074, r=0.8241, rho=0.5350, PCA95=25
+24468.5s 320 
+24468.5s 321 ============================================================
+24468.5s 322 LATENT DIM = 50 (3-qubit)
+24468.5s 323 ============================================================
+24468.5s 324 Trainable params: 22,632
+24750.6s 325 Ep 050 | val F 0.8821 | 282s
+25031.1s 326 Ep 100 | val F 0.8936 | 563s
+25308.7s 327 Ep 150 | val F 0.8980 | 840s
+25583.5s 328 Ep 200 | val F 0.9014 | 1115s
+25583.5s 329 Result: F=0.9038, r=0.8048, rho=0.4658, PCA95=30
+25583.5s 330 
+25583.5s 331 ============================================================
+25583.5s 332 LATENT DIM ABLATION SUMMARY
+25583.5s 333 ============================================================
+25583.5s 334 d_z |       F |       r |     rho | PCA95 | Epoch |   Params
+25583.5s 335 ------------------------------------------------------------
+25583.5s 336 10 | 0.7949 | 0.6880 | 0.3822 |     8 |   200 |   18,032
+25583.5s 337 20 | 0.8936 | 0.7729 | 0.4775 |    15 |   200 |   19,182
+25583.5s 338 30 | 0.9072 | 0.7925 | 0.4802 |    20 |   200 |   20,332
+25583.5s 339 40 | 0.9074 | 0.8241 | 0.5350 |    25 |   200 |   21,482
+25583.5s 340 50 | 0.9038 | 0.8048 | 0.4658 |    30 |   200 |   22,632
+25583.5s 341 
+25583.5s 342 Exp2 total time: 5874s
+25583.5s 343 Pauli basis: 2q, dim=4, n_pauli_nonid=15, n_layers=4, n_angles=24
+25583.5s 344 Generating 2q dataset for Pareto validation...
+25585.5s 345 Depolarized: requesting 715 ... got 715
+25586.3s 346 Werner: requesting 715 ... got 715
+25587.4s 347 Isotropic: requesting 714 ... got 714
+25602.6s 348 AmpDamped: requesting 714 ... got 714
+25622.1s 349 PhaseDamped: requesting 714 ... got 714
+25632.4s 350 Thermal: requesting 714 ... got 714
+25634.0s 351 Separable: requesting 714 ... got 714
+25634.0s 352 Total 5000 | purity [0.840, 0.960] mean=0.905
+25634.6s 353 Depolarized: requesting 115 ... got 115
+25635.1s 354 Werner: requesting 115 ... got 115
+25635.7s 355 Isotropic: requesting 114 ... got 114
+25638.1s 356 AmpDamped: requesting 114 ... got 114
+25641.4s 357 PhaseDamped: requesting 114 ... got 114
+25643.0s 358 Thermal: requesting 114 ... got 114
+25643.9s 359 Separable: requesting 114 ... got 114
+25643.9s 360 Total 800 | purity [0.840, 0.960] mean=0.907
+25643.9s 361 Dataset: train=(5000, 15), val=(800, 15)
+25643.9s 362 
+25643.9s 363 --- lambda_m=0.1, lambda_p=1.0 ---
+26213.4s 364 F=0.9809, r=0.9013, pur_MAE=0.0255, ep=165
+26213.4s 365 
+26213.4s 366 --- lambda_m=0.1, lambda_p=2.0 ---
+26893.5s 367 F=0.9806, r=0.9020, pur_MAE=0.0251, ep=200
+26893.5s 368 
+26893.5s 369 --- lambda_m=0.1, lambda_p=5.0 ---
+27412.4s 370 F=0.9789, r=0.8787, pur_MAE=0.0240, ep=160
+27412.4s 371 
+27412.4s 372 --- lambda_m=0.2, lambda_p=1.0 ---
+28056.7s 373 F=0.9805, r=0.9282, pur_MAE=0.0255, ep=200
+28056.7s 374 
+28056.7s 375 --- lambda_m=0.2, lambda_p=2.0 ---
+28685.4s 376 F=0.9797, r=0.9230, pur_MAE=0.0255, ep=200
+28685.4s 377 
+28685.4s 378 --- lambda_m=0.2, lambda_p=5.0 ---
+29324.2s 379 F=0.9779, r=0.9222, pur_MAE=0.0243, ep=200
+29324.2s 380 
+29324.2s 381 --- lambda_m=0.5, lambda_p=1.0 ---
+29968.3s 382 F=0.9754, r=0.9312, pur_MAE=0.0256, ep=200
+29968.3s 383 
+29968.3s 384 --- lambda_m=0.5, lambda_p=2.0 ---
+30617.6s 385 F=0.9757, r=0.9381, pur_MAE=0.0257, ep=200
+30617.6s 386 
+30617.6s 387 --- lambda_m=0.5, lambda_p=5.0 ---
+31244.7s 388 F=0.9718, r=0.9373, pur_MAE=0.0256, ep=200
+31244.7s 389 
+31244.7s 390 ========================================================================
+31244.7s 391 PARETO VALIDATION GRID SUMMARY
+31244.7s 392 ========================================================================
+31244.7s 393 lm |     lp |       F |       r |  pur_MAE | Epoch
+31244.7s 394 -------------------------------------------------------
+31244.7s 395 0.10 |    1.0 | 0.9809 | 0.9013 | 0.02552 |   165
+31244.7s 396 0.10 |    2.0 | 0.9806 | 0.9020 | 0.02512 |   200
+31244.7s 397 0.10 |    5.0 | 0.9789 | 0.8787 | 0.02404 |   160
+31244.7s 398 0.20 |    1.0 | 0.9805 | 0.9282 | 0.02550 |   200
+31244.7s 399 0.20 |    2.0 | 0.9797 | 0.9230 | 0.02550 |   200
+31244.7s 400 0.20 |    5.0 | 0.9779 | 0.9222 | 0.02425 |   200
+31244.7s 401 0.50 |    1.0 | 0.9754 | 0.9312 | 0.02564 |   200
+31244.7s 402 0.50 |    2.0 | 0.9757 | 0.9381 | 0.02573 |   200
+31244.7s 403 0.50 |    5.0 | 0.9718 | 0.9373 | 0.02557 |   200
+31244.7s 404 
+31244.7s 405 (0.20, 2.0) is dominated by: [(0.2, 1.0)]
+31244.7s 406 
+31244.7s 407 Exp3 total time: 5661s
+31244.8s 408 
+31244.8s 409 ========================================================================
+31244.8s 410 EXPERIMENT 4 — 2-QUBIT PER-CHANNEL BREAKDOWN
+31244.8s 411 ========================================================================
+31244.8s 412 Pauli basis: 2q, dim=4, n_pauli_nonid=15, n_layers=4, n_angles=24
+31244.8s 413 Loading checkpoint: /kaggle/working/model_2q_seed42.pt
+31244.8s 414 Model loaded.
+31244.8s 415 
+31244.8s 416 Evaluating Depolarized (200 states)... WARNING: only got 0/200
+31247.7s 417 Traceback (most recent call last):
+31247.7s 418 File "<string>", line 1, in <module>
+31247.7s 419 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+31247.7s 420 raise_for_execution_errors(nb, output_path)
+31247.7s 421 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+31247.7s 422 raise error
+31247.7s 423 papermill.exceptions.PapermillExecutionError:
+31247.7s 424 ---------------------------------------------------------------------------
+31247.7s 425 Exception encountered at "In [10]":
+31247.7s 426 ---------------------------------------------------------------------------
+31247.7s 427 ValueError                                Traceback (most recent call last)
+31247.7s 428 /tmp/ipykernel_22/2047726120.py in <cell line: 0>()
+31247.7s 429 55             print(f" WARNING: only got {len(X_list)}/{N_EVAL_CH}")
+31247.7s 430 56
+31247.7s 431 ---> 57         X_ch = np.stack(X_list)
+31247.7s 432 58         Rho_ch = np.stack(Rho_list)
+31247.7s 433 59
+31247.7s 434 
+31247.7s 435 /usr/local/lib/python3.12/dist-packages/numpy/_core/shape_base.py in stack(arrays, axis, out, dtype, casting)
+31247.7s 436 442     arrays = [asanyarray(arr) for arr in arrays]
+31247.7s 437 443     if not arrays:
+31247.7s 438 --> 444         raise ValueError('need at least one array to stack')
+31247.7s 439 445
+31247.7s 440 446     shapes = {arr.shape for arr in arrays}
+31247.7s 441 
+31247.7s 442 ValueError: need at least one array to stack
+31247.7s 443 
+31250.1s 444 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+31250.1s 445 cells[i][c] = re.sub('\\\\\|', '|', cell)
+31250.3s 446 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+31250.3s 447 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+31250.9s 448 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+31251.4s 449 [NbConvertApp] Writing 112108 bytes to __notebook__.ipynb
+31253.9s 450 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+31255.1s 451 [NbConvertApp] Writing 703376 bytes to __results__.html

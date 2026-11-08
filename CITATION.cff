@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article in preferred-citation."
+title: "Geometric Latent Space Quantum State Tomography with Metric-Preserving Autoencoders: Source Code"
+version: 2.0.0
+license: MIT
+repository-code: "https://github.com/tom32bit/Geometric-Latent-Space-Quantum-State-Tomography"
+authors:
+  - family-names: Tomal
+    given-names: S. M. Yousuf Iqbal
+    email: yousuf.iqbal.tomal@g.bracu.ac.bd
+    affiliation: "Department of Computer Science and Engineering, BRAC University, Dhaka, Bangladesh"
+    orcid: "https://orcid.org/0009-0000-3391-3824"
+  - family-names: Al Shafin
+    given-names: Abdullah
+    email: abdullah.al.shafin@g.bracu.ac.bd
+    affiliation: "Department of Computer Science and Engineering, BRAC University, Dhaka, Bangladesh"
+    orcid: "https://orcid.org/0009-0007-6634-6900"
+keywords:
+  - quantum state tomography
+  - autoencoder
+  - parameterized quantum circuits
+  - Bures distance
+  - metric learning
+preferred-citation:
+  type: article
+  title: "Geometric Latent Space Quantum State Tomography with Metric-Preserving Autoencoders"
+  authors:
+    - family-names: Tomal
+      given-names: S. M. Yousuf Iqbal
+      orcid: "https://orcid.org/0009-0000-3391-3824"
+    - family-names: Al Shafin
+      given-names: Abdullah
+      orcid: "https://orcid.org/0009-0007-6634-6900"
+  journal: "Machine Learning: Science and Technology"
+  year: 2026
+  notes: "Under review"

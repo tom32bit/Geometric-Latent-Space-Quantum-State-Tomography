@@ -1,0 +1,42 @@
+=== geometry (original) ===
+2q original: r all 0.919, no-Werner 0.854; rho_s all 0.860; kappa 0.0101  [34s]
+3q original: r all 0.795, no-Werner 0.425; rho_s all 0.538; kappa 0.0104  [36s]
+4q original: r all 0.821, no-Werner 0.257; rho_s all 0.437; kappa 0.0547  [29s]
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\geometry_original.json
+=== geometry finished in 99s ===
+=== shots (original) ===
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\run_analyses.py", line 490, in <module>
+    main()
+  File "C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\run_analyses.py", line 485, in main
+    globals()[f'run_{c}'](a.models)
+  File "C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\run_analyses.py", line 301, in run_shots
+    print(f'{n}q {label} seed {seed}: F \u221e {F_inf.mean():.4f} | 10k {rec["10000"]["F_mean"]:.4f} | '
+  File "C:\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u221e' in position 23: character maps to <undefined>
+=== oracle (original) ===
+2q: model F 0.9711 -> per-state fit 0.9958 (warm 0.9952, random 0.9951)  [27s]
+3q: model F 0.9264 -> per-state fit 0.9915 (warm 0.9908, random 0.9901)  [63s]
+4q: model F 0.8389 -> per-state fit 0.9870 (warm 0.9870, random 0.9844)  [207s]
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\oracle.json
+=== oracle finished in 297s ===
+=== latentviz (original) ===
+2q latent visualization done
+3q latent visualization done
+4q latent visualization done
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\latentviz.json
+=== latentviz finished in 87s ===
+=== timing (original) ===
+2q: latent 316 ns/pair, fidelity 4.3 탎/pair, speedup 14x, encoder 2.9 탎/state
+3q: latent 312 ns/pair, fidelity 14.1 탎/pair, speedup 45x, encoder 0.6 탎/state
+4q: latent 488 ns/pair, fidelity 53.9 탎/pair, speedup 110x, encoder 3.4 탎/state
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\timing.json
+=== timing finished in 6s ===
+=== ood (original) ===
+2q OOD: 0.30-0.50: 0.775, 0.50-0.70: 0.905, 0.70-0.85: 0.966, 0.85-0.95: 0.987, 0.95-0.99: 0.974, 0.99-1.00: 0.955
+3q OOD: 0.30-0.50: 0.756, 0.50-0.70: 0.854, 0.70-0.85: 0.910, 0.85-0.95: 0.926, 0.95-0.99: 0.915, 0.99-1.00: 0.895
+4q OOD: 0.30-0.50: 0.687, 0.50-0.70: 0.762, 0.70-0.85: 0.803, 0.85-0.95: 0.817, 0.95-0.99: 0.806, 0.99-1.00: 0.793
+wrote C:\Users\USER\Desktop\TOMOGRAPHY-FASTRACK\revision\results\ood_original.json
+=== ood finished in 7s ===

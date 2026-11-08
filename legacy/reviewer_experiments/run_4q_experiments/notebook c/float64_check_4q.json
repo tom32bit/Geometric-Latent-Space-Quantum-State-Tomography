@@ -1,0 +1,12 @@
+{
+  "n_qubits": 4,
+  "n_eval": 500,
+  "eps_12_vs_7_max_diff": 0.0,
+  "f32_vs_f64_max_diff": 7.990624884224307e-05,
+  "f32_vs_f64_mean_diff": 1.4619896666823048e-05,
+  "f32_vs_scipy_max_diff": 7.992081222840675e-05,
+  "mean_fid_f32": 0.8117939708456398,
+  "mean_fid_f64": 0.8117956528700055,
+  "mean_fid_scipy": 0.811795653896467,
+  "significant": false
+}

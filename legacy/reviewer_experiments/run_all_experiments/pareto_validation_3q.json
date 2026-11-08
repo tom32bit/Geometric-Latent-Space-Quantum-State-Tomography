@@ -1,0 +1,92 @@
+[
+  {
+    "lambda_m": 0.1,
+    "lambda_p": 1.0,
+    "mean_fidelity": 0.9074296245537699,
+    "median_fidelity": 0.923174649477005,
+    "pearson_r": 0.7392190098762512,
+    "purity_mae": 0.02712719514966011,
+    "final_epoch": 200,
+    "train_time_s": 1041.2529673576355
+  },
+  {
+    "lambda_m": 0.1,
+    "lambda_p": 2.0,
+    "mean_fidelity": 0.9021588298864662,
+    "median_fidelity": 0.9170143008232117,
+    "pearson_r": 0.7337295413017273,
+    "purity_mae": 0.026846837252378464,
+    "final_epoch": 200,
+    "train_time_s": 1045.4243733882904
+  },
+  {
+    "lambda_m": 0.1,
+    "lambda_p": 5.0,
+    "mean_fidelity": 0.8988946994394064,
+    "median_fidelity": 0.9152889847755432,
+    "pearson_r": 0.736659586429596,
+    "purity_mae": 0.027614446356892586,
+    "final_epoch": 200,
+    "train_time_s": 1043.89528799057
+  },
+  {
+    "lambda_m": 0.2,
+    "lambda_p": 1.0,
+    "mean_fidelity": 0.8985882816649974,
+    "median_fidelity": 0.9158610105514526,
+    "pearson_r": 0.7538490891456604,
+    "purity_mae": 0.0269828662276268,
+    "final_epoch": 200,
+    "train_time_s": 1039.7387001514435
+  },
+  {
+    "lambda_m": 0.2,
+    "lambda_p": 2.0,
+    "mean_fidelity": 0.8983230113890022,
+    "median_fidelity": 0.9163528680801392,
+    "pearson_r": 0.775626540184021,
+    "purity_mae": 0.026989946141839027,
+    "final_epoch": 200,
+    "train_time_s": 1041.859525680542
+  },
+  {
+    "lambda_m": 0.2,
+    "lambda_p": 5.0,
+    "mean_fidelity": 0.8900630873022601,
+    "median_fidelity": 0.9101198017597198,
+    "pearson_r": 0.7380023002624512,
+    "purity_mae": 0.027807272970676422,
+    "final_epoch": 200,
+    "train_time_s": 1029.7045516967773
+  },
+  {
+    "lambda_m": 0.5,
+    "lambda_p": 1.0,
+    "mean_fidelity": 0.8906254291720689,
+    "median_fidelity": 0.9124463498592377,
+    "pearson_r": 0.7932937741279602,
+    "purity_mae": 0.026446470990777016,
+    "final_epoch": 200,
+    "train_time_s": 1012.9370331764221
+  },
+  {
+    "lambda_m": 0.5,
+    "lambda_p": 2.0,
+    "mean_fidelity": 0.8834158432483673,
+    "median_fidelity": 0.9069060981273651,
+    "pearson_r": 0.80753493309021,
+    "purity_mae": 0.026171112433075905,
+    "final_epoch": 200,
+    "train_time_s": 1007.8641901016235
+  },
+  {
+    "lambda_m": 0.5,
+    "lambda_p": 5.0,
+    "mean_fidelity": 0.8604340692050755,
+    "median_fidelity": 0.8837801516056061,
+    "pearson_r": 0.7815302610397339,
+    "purity_mae": 0.0270591601729393,
+    "final_epoch": 200,
+    "train_time_s": 1090.7984743118286
+  }
+]
