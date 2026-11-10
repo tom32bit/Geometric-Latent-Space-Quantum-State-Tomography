@@ -1,12 +1,14 @@
 # Geometric Latent Space Quantum State Tomography with Metric-Preserving Autoencoders
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24108878.svg)](https://doi.org/10.5281/zenodo.24108878)
+
 Code, held-out test sets, trained models and result files for the paper
 
 > **Geometric Latent Space Quantum State Tomography with Metric-Preserving Autoencoders**
 > S.M. Yousuf Iqbal Tomal and Abdullah Al Shafin
 > *Machine Learning: Science and Technology* (IOP Publishing), under review.
 
-This is version 2 of the code, for the revised manuscript. The code and outputs of the first submitted version (version 1, archived as [10.5281/zenodo.20096033](https://doi.org/10.5281/zenodo.20096033)) are kept in [`legacy/`](legacy/).
+This is version 2 of the code, for the revised manuscript, archived on Zenodo as [10.5281/zenodo.24108878](https://doi.org/10.5281/zenodo.24108878). The code and outputs of the first submitted version (version 1, archived as [10.5281/zenodo.20096033](https://doi.org/10.5281/zenodo.20096033)) are kept in [`legacy/`](legacy/).
 
 **Authors**
 
@@ -146,7 +148,7 @@ If you use this code, please cite the paper:
 }
 ```
 
-Citation metadata for the code itself is in [`CITATION.cff`](CITATION.cff).
+To cite the code itself, use [10.5281/zenodo.24108878](https://doi.org/10.5281/zenodo.24108878) (version 2.0.0); its metadata is also in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
