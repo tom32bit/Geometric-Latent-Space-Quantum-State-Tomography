@@ -12,8 +12,8 @@ This is version 2 of the code, for the revised manuscript, archived on Zenodo as
 
 **Authors**
 
-- **S.M. Yousuf Iqbal Tomal** (corresponding author): [yousuf.iqbal.tomal@g.bracu.ac.bd](mailto:yousuf.iqbal.tomal@g.bracu.ac.bd) · [ORCID 0009-0000-3391-3824](https://orcid.org/0009-0000-3391-3824)
-- **Abdullah Al Shafin**: [abdullah.al.shafin@g.bracu.ac.bd](mailto:abdullah.al.shafin@g.bracu.ac.bd) · [ORCID 0009-0007-6634-6900](https://orcid.org/0009-0007-6634-6900)
+- **S.M. Yousuf Iqbal Tomal**: [yousuf.tomal.0@gmail.com](mailto:yousuf.tomal.0@gmail.com) · [ORCID 0009-0000-3391-3824](https://orcid.org/0009-0000-3391-3824)
+- **Abdullah Al Shafin** (corresponding author): [abdullah.al.shafin@g.bracu.ac.bd](mailto:abdullah.al.shafin@g.bracu.ac.bd) · [ORCID 0009-0007-6634-6900](https://orcid.org/0009-0007-6634-6900)
 
 Department of Computer Science and Engineering, BRAC University, Dhaka, Bangladesh.
 
